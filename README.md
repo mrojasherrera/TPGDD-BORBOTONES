@@ -1,4 +1,4 @@
-# Pruebas01
+# TPGDD-BORBOTONES
 
  La fecha del sistema se toma del archivo app.config
  se debe incluir "using System.Configuration" en el formulario en que lo voy a usar
