@@ -217,9 +217,9 @@ insert into LOS_BORBOTONES.Funcionalidad (Func_Nombre)
 /*** MIGRACION OFERTA ***/
 
 insert into LOS_BORBOTONES.Oferta (Oferta_Codigo, Oferta_Precio, Oferta_Precio_Ficticio, 
-			Oferta_Fecha, Oferta_Fecha_Venc, Oferta_Cantidad, Oferta_Descripcion, Provee_CUIT)
+			Oferta_Fecha, Oferta_Fecha_Venc, Oferta_Cantidad, Oferta_Descripcion, Provee_CUIT, Oferta_Cantidad_Compra)
 	select distinct Oferta_Codigo ,Oferta_Precio, Oferta_Precio_Ficticio, Oferta_Fecha, 
-			Oferta_Fecha_Venc, Oferta_Cantidad, Oferta_Descripcion, Provee_CUIT 
+			Oferta_Fecha_Venc, Oferta_Cantidad, Oferta_Descripcion, Provee_CUIT, 2 
 			from gd_esquema.Maestra
 			where Oferta_Codigo is not null 
 

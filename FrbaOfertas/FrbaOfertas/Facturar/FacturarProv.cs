@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Configuration;
+using System.Globalization;
 
 namespace FrbaOfertas.Facturar
 {
@@ -16,8 +18,16 @@ namespace FrbaOfertas.Facturar
         public FacturarProv()
         {
             InitializeComponent();
+            String fecha_sistema = Properties.Settings.Default.fechaSistema;
+            //DateTime unaFecha = Convert.ToDateTime(fecha_sistema, CultureInfo.InvariantCulture);
+            DateTime unaFecha = Convert.ToDateTime(fecha_sistema);
+            DesdeDTP.Value = unaFecha;
+            HastaDTP.Value = unaFecha;
+
             cargarDatos();
         }
+
+        
         SqlConnection conexion = new SqlConnection("Data Source=localhost\\SQLSERVER2012;Initial Catalog=GD2C2019;Persist Security Info=True;User ID=gdCupon2019;Password=gd2019");
         
         public void cargarDatos()
