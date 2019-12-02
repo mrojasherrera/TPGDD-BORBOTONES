@@ -33,5 +33,14 @@ namespace FrbaOfertas.Properties {
                 return ((string)(this["GD2C2019ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("\"2019-11-01\"")]
+        public string fechaSistema {
+            get {
+                return ((string)(this["fechaSistema"]));
+            }
+        }
     }
 }

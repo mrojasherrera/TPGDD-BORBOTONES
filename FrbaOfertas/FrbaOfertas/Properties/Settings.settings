@@ -10,5 +10,8 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=ABM-PC\SQLSERVER2012;Initial Catalog=GD2C2019;Persist Security Info=True;User ID=gdCupon2019;Password=gd2019</Value>
     </Setting>
+    <Setting Name="fechaSistema" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">"2019-11-01"</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
