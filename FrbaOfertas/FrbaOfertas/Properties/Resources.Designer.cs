@@ -203,6 +203,16 @@ namespace FrbaOfertas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pngtree_printerprintprintingeducation_vector_line_icon_png_image_1489415 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree_printerprintprintingeducation_vector_line_icon_png_image_1489415", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap secrecy_icon {
             get {
                 object obj = ResourceManager.GetObject("secrecy_icon", resourceCulture);
