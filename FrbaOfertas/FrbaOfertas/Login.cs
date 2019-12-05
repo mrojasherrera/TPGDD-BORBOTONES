@@ -53,7 +53,12 @@ namespace FrbaOfertas
             try
             {
                 conexion.Open();
-                SqlCommand comandoProv = new SqlCommand("select u.User_name, r.Rol_Nombre, u.Habilitado from LOS_BORBOTONES.Usuario u join LOS_BORBOTONES.Rol_Usuario ru on (u.User_name = ru.User_name) join LOS_BORBOTONES.Role r on(ru.Rol_Id = r.Rol_Id) where r.Rol_Nombre = 'Proveedor' and u.User_Name=@usuario and Password = HASHBYTES('SHA2_256', CAST( (cast(@pass as nvarchar(20))) AS varbinary(70)))", conexion);
+                string cadena = "select u.User_name, r.Rol_Nombre, u.Habilitado ";
+                cadena += "from LOS_BORBOTONES.Usuario u join LOS_BORBOTONES.Rol_Usuario ru on (u.User_name = ru.User_name) ";
+                cadena += "join LOS_BORBOTONES.Role r on(ru.Rol_Id = r.Rol_Id) ";
+                cadena += "where r.Rol_Nombre = 'Proveedor' and u.User_Name=@usuario  ";
+                cadena += "and Password = HASHBYTES('SHA2_256', CAST( (cast(@pass as nvarchar(20))) AS varbinary(70)))";
+                SqlCommand comandoProv = new SqlCommand(cadena, conexion);
                 comandoProv.Parameters.AddWithValue("usuario", usuario);
                 comandoProv.Parameters.AddWithValue("pass", pass);
 
@@ -84,7 +89,7 @@ namespace FrbaOfertas
                     {
 
                         MessageBox.Show("Se terminaron tus 3 intentos...");
-                        bloquear(usuario);
+                        this.bloquear(usuario);
 
                     }
                 }
@@ -103,7 +108,12 @@ namespace FrbaOfertas
             try
             {
                 conexion.Open();
-                SqlCommand comandoAdm = new SqlCommand("select u.User_name, r.Rol_Nombre from LOS_BORBOTONES.Usuario u join LOS_BORBOTONES.Rol_Usuario ru on (u.User_name = ru.User_name) join LOS_BORBOTONES.Role r on(ru.Rol_Id = r.Rol_Id) where r.Rol_Nombre = 'Administrador General' and u.User_Name=@usuario and Password = HASHBYTES('SHA2_256', CAST( cast(@pass as nvarchar(20)) AS varbinary(70)))", conexion);
+                string cadena = "select u.User_name, r.Rol_Nombre ";
+                cadena += "from LOS_BORBOTONES.Usuario u join LOS_BORBOTONES.Rol_Usuario ru on (u.User_name = ru.User_name) ";
+                cadena += "join LOS_BORBOTONES.Role r on(ru.Rol_Id = r.Rol_Id) ";
+                cadena += "where r.Rol_Nombre = 'Administrador General' and u.User_Name=@usuario ";
+                cadena += "and Password = HASHBYTES('SHA2_256', CAST( cast(@pass as nvarchar(20)) AS varbinary(70)))";
+                SqlCommand comandoAdm = new SqlCommand(cadena, conexion);
                 comandoAdm.Parameters.AddWithValue("usuario", usuario);
                 comandoAdm.Parameters.AddWithValue("pass", pass);
 
@@ -152,8 +162,12 @@ namespace FrbaOfertas
             try
             {
                 conexion.Open();
-
-                SqlCommand comandoCliente = new SqlCommand("select u.User_name, r.Rol_Nombre, u.Habilitado from LOS_BORBOTONES.Usuario u join LOS_BORBOTONES.Rol_Usuario ru on (u.User_name = ru.User_name) join LOS_BORBOTONES.Role r on(ru.Rol_Id = r.Rol_Id) where r.Rol_Nombre ='Cliente' and u.User_name=@usuario and Password = HASHBYTES('SHA2_256', CAST( (cast (@pass as nvarchar(20))) AS varbinary(70)))", conexion);
+                String cadena = "select u.User_name, r.Rol_Nombre, u.Habilitado ";
+                cadena += "from LOS_BORBOTONES.Usuario u join LOS_BORBOTONES.Rol_Usuario ru on (u.User_name = ru.User_name) ";
+                cadena += "join LOS_BORBOTONES.Role r on(ru.Rol_Id = r.Rol_Id) ";
+                cadena += "where r.Rol_Nombre ='Cliente' and u.User_name=@usuario ";
+                cadena += "and Password = HASHBYTES('SHA2_256', CAST( (cast (@pass as nvarchar(20))) AS varbinary(70)))";
+                SqlCommand comandoCliente = new SqlCommand(cadena, conexion);
                 comandoCliente.Parameters.AddWithValue("usuario", usuario);
                 comandoCliente.Parameters.AddWithValue("pass", pass);
                 SqlDataAdapter data = new SqlDataAdapter(comandoCliente);

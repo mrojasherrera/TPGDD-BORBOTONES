@@ -73,10 +73,11 @@
             // 
             // RolCB
             // 
+            this.RolCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RolCB.FormattingEnabled = true;
             this.RolCB.Location = new System.Drawing.Point(173, 120);
             this.RolCB.Name = "RolCB";
-            this.RolCB.Size = new System.Drawing.Size(185, 21);
+            this.RolCB.Size = new System.Drawing.Size(185, 24);
             this.RolCB.TabIndex = 2;
             // 
             // SalirBtn
@@ -207,10 +208,11 @@
             // 
             // RolRegCB
             // 
+            this.RolRegCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RolRegCB.FormattingEnabled = true;
             this.RolRegCB.Location = new System.Drawing.Point(25, 66);
             this.RolRegCB.Name = "RolRegCB";
-            this.RolRegCB.Size = new System.Drawing.Size(173, 21);
+            this.RolRegCB.Size = new System.Drawing.Size(173, 24);
             this.RolRegCB.TabIndex = 5;
             // 
             // Login
