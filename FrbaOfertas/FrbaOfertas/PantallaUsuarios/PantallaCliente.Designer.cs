@@ -155,6 +155,7 @@
             this.CambiarBtn.TabIndex = 7;
             this.CambiarBtn.Text = "Cambiar Contraseña";
             this.CambiarBtn.UseVisualStyleBackColor = true;
+            this.CambiarBtn.Click += new System.EventHandler(this.CambiarBtn_Click);
             // 
             // PantallaCliente
             // 

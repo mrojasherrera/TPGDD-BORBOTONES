@@ -213,6 +213,16 @@ namespace FrbaOfertas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Restablecer {
+            get {
+                object obj = ResourceManager.GetObject("Restablecer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap secrecy_icon {
             get {
                 object obj = ResourceManager.GetObject("secrecy_icon", resourceCulture);

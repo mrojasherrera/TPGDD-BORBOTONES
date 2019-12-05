@@ -19,7 +19,9 @@ namespace FrbaOfertas.PantallaUsuarios
             UsuarioTB.Text = unCliente;
             usuario();
         }
+
         SqlConnection conexion = new SqlConnection("Data Source=localhost\\SQLSERVER2012;Initial Catalog=GD2C2019;Persist Security Info=True;User ID=gdCupon2019;Password=gd2019");
+        
         public void usuario()
         {
             conexion.Open();
@@ -46,6 +48,12 @@ namespace FrbaOfertas.PantallaUsuarios
             this.Close();
             FrbaOfertas.Login login = new FrbaOfertas.Login();
             login.Show();
+        }
+
+        private void CambiarBtn_Click(object sender, EventArgs e)
+        {
+            CambiarPass cambiar = new CambiarPass(UsuarioTB.Text);
+            cambiar.ShowDialog();
         }
     }
 }

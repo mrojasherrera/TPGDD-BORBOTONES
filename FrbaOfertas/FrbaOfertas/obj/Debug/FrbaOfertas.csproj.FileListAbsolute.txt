@@ -99,3 +99,4 @@ C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfer
 C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.PantallaUsuarios.PantallaProveedor.resources
 C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.Properties.Resources.resources
 C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.csproj.GenerateResource.Cache
+C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.PantallaUsuarios.CambiarPass.resources
