@@ -33,14 +33,13 @@
             this.ListarCB = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.AnioCB = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.UnSemestreCB = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.VolverBtn = new System.Windows.Forms.Button();
             this.BuscarBtn = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.AnioCB = new System.Windows.Forms.ComboBox();
-            this.mostrarLB = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ListadoDGV)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -102,6 +101,25 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Periodo";
             // 
+            // AnioCB
+            // 
+            this.AnioCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AnioCB.FormattingEnabled = true;
+            this.AnioCB.Location = new System.Drawing.Point(327, 28);
+            this.AnioCB.Name = "AnioCB";
+            this.AnioCB.Size = new System.Drawing.Size(121, 21);
+            this.AnioCB.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(25, 29);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "AÑO:";
+            // 
             // UnSemestreCB
             // 
             this.UnSemestreCB.FormattingEnabled = true;
@@ -156,40 +174,11 @@
             this.BuscarBtn.UseVisualStyleBackColor = true;
             this.BuscarBtn.Click += new System.EventHandler(this.BuscarBtn_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(25, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "AÑO:";
-            // 
-            // AnioCB
-            // 
-            this.AnioCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.AnioCB.FormattingEnabled = true;
-            this.AnioCB.Location = new System.Drawing.Point(327, 28);
-            this.AnioCB.Name = "AnioCB";
-            this.AnioCB.Size = new System.Drawing.Size(121, 21);
-            this.AnioCB.TabIndex = 3;
-            // 
-            // mostrarLB
-            // 
-            this.mostrarLB.AutoSize = true;
-            this.mostrarLB.Location = new System.Drawing.Point(544, 343);
-            this.mostrarLB.Name = "mostrarLB";
-            this.mostrarLB.Size = new System.Drawing.Size(35, 13);
-            this.mostrarLB.TabIndex = 6;
-            this.mostrarLB.Text = "label4";
-            // 
             // Estadistico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(720, 478);
-            this.Controls.Add(this.mostrarLB);
             this.Controls.Add(this.BuscarBtn);
             this.Controls.Add(this.VolverBtn);
             this.Controls.Add(this.pictureBox1);
@@ -205,7 +194,6 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -223,6 +211,5 @@
         private System.Windows.Forms.ComboBox UnSemestreCB;
         private System.Windows.Forms.ComboBox AnioCB;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label mostrarLB;
     }
 }

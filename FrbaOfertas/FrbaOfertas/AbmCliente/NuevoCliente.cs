@@ -51,7 +51,7 @@ namespace FrbaOfertas.AbmCliente
             cant = comandoNuevo.ExecuteNonQuery();
             if (cant == 1)
             {
-                MessageBox.Show("Se registró correctamente, su usuario y contraseña es su DNI...");
+                MessageBox.Show("Se registró correctamente y para poder loguearse, su usuario y contraseña son su DNI...");
 
             }
         }
@@ -75,36 +75,45 @@ namespace FrbaOfertas.AbmCliente
 
         private void NuevoBtn_Click(object sender, EventArgs e)
         {
-            
-            int dni = Convert.ToInt32(DniTB.Text);
-            DateTime fecha = FechaNacDTP.Value;
-
-            String cadena = "insert into LOS_BORBOTONES.Cliente ";
-            cadena += "(Cli_Nombre, Cli_Apellido, Cli_Dni, Cli_Direccion, Cli_Telefono, Cli_Mail, Cli_Fecha_Nac, Cli_Ciudad , Cli_CodigoPostal, User_name, Cli_Saldo) ";
-            cadena += "values ";
-            cadena += "(@nombre, @apellido, @dni, @direccion, @telefono, @mail, @fecha, @ciudad, @codPost, @usuario, 200) ";
             conexion.Open();
-            SqlCommand comandoNuevo = new SqlCommand(cadena, conexion);
-            comandoNuevo.Parameters.AddWithValue("@nombre", NombreTB.Text);
-            comandoNuevo.Parameters.AddWithValue("@apellido", ApellidoTB.Text);
-            comandoNuevo.Parameters.AddWithValue("@dni", dni);
-            comandoNuevo.Parameters.AddWithValue("@direccion", DireccionTB.Text);
-            comandoNuevo.Parameters.AddWithValue("@telefono", TelefonoTB.Text);
-            comandoNuevo.Parameters.AddWithValue("@mail", MailTB.Text);
-            comandoNuevo.Parameters.AddWithValue("@fecha", fecha);
-            comandoNuevo.Parameters.AddWithValue("@ciudad", CiudadTB.Text);
-            comandoNuevo.Parameters.AddWithValue("@codPost", CodPostTB.Text);
-            comandoNuevo.Parameters.AddWithValue("@usuario", DniTB.Text);
-            int cant;
-            cant = comandoNuevo.ExecuteNonQuery();
-            if (cant == 1)
+            if (NombreTB.Text.Trim() != "" && ApellidoTB.Text.Trim() != "" && DniTB.Text.Trim() != "" && DireccionTB.Text.Trim() != "" && TelefonoTB.Text.Trim() != "" && MailTB.Text.Trim() != "" && FechaNacDTP.Text.Trim() != "" && CiudadTB.Text.Trim() != "" && CodPostTB.Text.Trim() != "" && DniTB.Text.Trim() != "")
             {
-                generarUsuario(DniTB.Text);
+                
+            
+                int dni = Convert.ToInt32(DniTB.Text);
+                DateTime fecha = FechaNacDTP.Value;
 
+                String cadena = "insert into LOS_BORBOTONES.Cliente ";
+                cadena += "(Cli_Nombre, Cli_Apellido, Cli_Dni, Cli_Direccion, Cli_Telefono, Cli_Mail, Cli_Fecha_Nac, Cli_Ciudad , Cli_CodigoPostal, User_name, Cli_Saldo) ";
+                cadena += "values ";
+                cadena += "(@nombre, @apellido, @dni, @direccion, @telefono, @mail, @fecha, @ciudad, @codPost, @usuario, 200) ";
+            
+                SqlCommand comandoNuevo = new SqlCommand(cadena, conexion);
+                comandoNuevo.Parameters.AddWithValue("@nombre", NombreTB.Text);
+                comandoNuevo.Parameters.AddWithValue("@apellido", ApellidoTB.Text);
+                comandoNuevo.Parameters.AddWithValue("@dni", dni);
+                comandoNuevo.Parameters.AddWithValue("@direccion", DireccionTB.Text);
+                comandoNuevo.Parameters.AddWithValue("@telefono", TelefonoTB.Text);
+                comandoNuevo.Parameters.AddWithValue("@mail", MailTB.Text);
+                comandoNuevo.Parameters.AddWithValue("@fecha", fecha);
+                comandoNuevo.Parameters.AddWithValue("@ciudad", CiudadTB.Text);
+                comandoNuevo.Parameters.AddWithValue("@codPost", CodPostTB.Text);
+                comandoNuevo.Parameters.AddWithValue("@usuario", DniTB.Text);
+                int cant;
+                cant = comandoNuevo.ExecuteNonQuery();
+                if (cant == 1)
+                {
+                    generarUsuario(DniTB.Text);
+
+                }
+                else
+                {
+                    MessageBox.Show("El cliente ya se encuentra registrado, intente nuevamente...");
+                }
             }
             else
             {
-                MessageBox.Show("El cliente ya se encuentra registrado, intente nuevamente...");
+                MessageBox.Show("Por favor complete todos los campos del registro...");
             }
             conexion.Close();
 

@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.NuevoBtn = new System.Windows.Forms.Button();
             this.LimpiarBtn = new System.Windows.Forms.Button();
             this.NomConTB = new System.Windows.Forms.TextBox();
@@ -61,7 +60,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.NuevoBtn);
             this.groupBox1.Controls.Add(this.LimpiarBtn);
             this.groupBox1.Controls.Add(this.NomConTB);
@@ -88,16 +86,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nuevo Proveedor";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(34, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 13);
-            this.label1.TabIndex = 37;
-            this.label1.Text = "(*) Campos requeridos";
             // 
             // NuevoBtn
             // 
@@ -132,9 +120,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(30, 49);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(157, 20);
+            this.label2.Size = new System.Drawing.Size(150, 20);
             this.label2.TabIndex = 19;
-            this.label2.Text = "RAZÓN SOCIAL: *";
+            this.label2.Text = "RAZÓN SOCIAL: ";
             // 
             // RubroTB
             // 
@@ -149,9 +137,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(30, 80);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 20);
+            this.label3.Size = new System.Drawing.Size(60, 20);
             this.label3.TabIndex = 20;
-            this.label3.Text = "CUIT: *";
+            this.label3.Text = "CUIT: ";
             // 
             // CiudadTB
             // 
@@ -343,7 +331,6 @@
         private System.Windows.Forms.Button VolverBtn;
         private System.Windows.Forms.Button NuevoBtn;
         private System.Windows.Forms.Button LimpiarBtn;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ErrorProvider ProveedorEP;
     }
 }

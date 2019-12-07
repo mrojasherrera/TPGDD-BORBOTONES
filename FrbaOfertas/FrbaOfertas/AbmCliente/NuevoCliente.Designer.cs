@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.LimpiarBtn = new System.Windows.Forms.Button();
             this.FechaNacDTP = new System.Windows.Forms.DateTimePicker();
             this.NuevoBtn = new System.Windows.Forms.Button();
@@ -61,7 +60,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.LimpiarBtn);
             this.groupBox1.Controls.Add(this.FechaNacDTP);
             this.groupBox1.Controls.Add(this.NuevoBtn);
@@ -88,16 +86,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nuevo cliente";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(33, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 13);
-            this.label1.TabIndex = 38;
-            this.label1.Text = "(*) Campo requerido";
             // 
             // LimpiarBtn
             // 
@@ -199,9 +187,9 @@
             this.Dni.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dni.Location = new System.Drawing.Point(29, 125);
             this.Dni.Name = "Dni";
-            this.Dni.Size = new System.Drawing.Size(57, 20);
+            this.Dni.Size = new System.Drawing.Size(45, 20);
             this.Dni.TabIndex = 31;
-            this.Dni.Text = "DNI: *";
+            this.Dni.Text = "DNI:";
             // 
             // Apellido
             // 
@@ -342,7 +330,6 @@
         private System.Windows.Forms.Button NuevoBtn;
         private System.Windows.Forms.Button LimpiarBtn;
         private System.Windows.Forms.DateTimePicker FechaNacDTP;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ErrorProvider ClienteEP;
     }
 }

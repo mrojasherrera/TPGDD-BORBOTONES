@@ -51,7 +51,7 @@ namespace FrbaOfertas.AbmProveedor
             cant = comandoNuevo.ExecuteNonQuery();
             if (cant == 1)
             {
-                MessageBox.Show("Se registró correctamente, su usuario y contraseña es su CUIT...");
+                MessageBox.Show("Se registró correctamente y para loguearse, su usuario y contraseña son su número CUIT incluido los guiones medios...");
 
             }
         }
