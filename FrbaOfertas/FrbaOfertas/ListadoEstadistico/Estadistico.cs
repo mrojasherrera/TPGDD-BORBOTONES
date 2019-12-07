@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FrbaOfertas.ListadoEstadistico
 {
-    public partial class Form1 : Form
+    public partial class Estadistico : Form
     {
-        public Form1()
+        public Estadistico()
         {
             InitializeComponent();
         }

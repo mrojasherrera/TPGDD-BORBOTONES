@@ -186,11 +186,11 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListadoEstadistico\Form1.cs">
+    <Compile Include="ListadoEstadistico\Estadistico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListadoEstadistico\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ListadoEstadistico\Estadistico.Designer.cs">
+      <DependentUpon>Estadistico.cs</DependentUpon>
     </Compile>
     <Compile Include="PantallaUsuarios\CambiarPass.cs">
       <SubType>Form</SubType>
@@ -281,8 +281,8 @@
     <EmbeddedResource Include="Facturar\FacturarProv.resx">
       <DependentUpon>FacturarProv.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListadoEstadistico\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="ListadoEstadistico\Estadistico.resx">
+      <DependentUpon>Estadistico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
