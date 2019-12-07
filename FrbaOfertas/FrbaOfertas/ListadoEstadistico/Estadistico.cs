@@ -108,8 +108,8 @@ namespace FrbaOfertas.ListadoEstadistico
             }
             else
             {
-                int mes2 = 6;
-                int mes1 = 1;
+                int mes2 = 12;
+                int mes1 = 7;
                 listadoMayorPorc(mes1, mes2, fechaAnio);
             }
             conexion.Close();

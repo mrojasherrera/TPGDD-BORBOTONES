@@ -34,9 +34,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.CambiarBtn = new System.Windows.Forms.Button();
             this.OfertaBtn = new System.Windows.Forms.Button();
             this.SalirBtn = new System.Windows.Forms.Button();
-            this.CambiarBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -101,6 +101,17 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Acciones";
             // 
+            // CambiarBtn
+            // 
+            this.CambiarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CambiarBtn.Location = new System.Drawing.Point(30, 93);
+            this.CambiarBtn.Name = "CambiarBtn";
+            this.CambiarBtn.Size = new System.Drawing.Size(140, 47);
+            this.CambiarBtn.TabIndex = 1;
+            this.CambiarBtn.Text = "Cambiar Contraseña";
+            this.CambiarBtn.UseVisualStyleBackColor = true;
+            this.CambiarBtn.Click += new System.EventHandler(this.CambiarBtn_Click);
+            // 
             // OfertaBtn
             // 
             this.OfertaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -123,16 +134,6 @@
             this.SalirBtn.Text = "Salir";
             this.SalirBtn.UseVisualStyleBackColor = false;
             this.SalirBtn.Click += new System.EventHandler(this.SalirBtn_Click);
-            // 
-            // CambiarBtn
-            // 
-            this.CambiarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CambiarBtn.Location = new System.Drawing.Point(30, 93);
-            this.CambiarBtn.Name = "CambiarBtn";
-            this.CambiarBtn.Size = new System.Drawing.Size(140, 47);
-            this.CambiarBtn.TabIndex = 1;
-            this.CambiarBtn.Text = "Cambiar Contraseña";
-            this.CambiarBtn.UseVisualStyleBackColor = true;
             // 
             // PantallaProveedor
             // 

@@ -49,6 +49,12 @@ namespace FrbaOfertas.PantallaUsuarios
             login.Show();
         }
 
+        private void CambiarBtn_Click(object sender, EventArgs e)
+        {
+            CambiarPass cambiar = new CambiarPass(ProveedorTB.Text);
+            cambiar.ShowDialog();
+        }
+
      
     }
 }
