@@ -75,30 +75,40 @@ namespace FrbaOfertas.AbmProveedor
         private void NuevoBtn_Click(object sender, EventArgs e)
         {
             conexion.Open();
-            String cadena = "INSERT INTO LOS_BORBOTONES.Proveedor ";
-            cadena += "(Provee_RS, Provee_Dom, Provee_Ciudad, Provee_Telefono, Provee_CUIT, Provee_Rubro, Provee_Mail, Provee_Cod_postal, Provee_Nombre_Contacto, User_name) ";
-            cadena += "VALUES ";
-            cadena += "(@rs, @dir, @ciudad, @telefono, @cuit, @rubro, @mail, @codPost, @nombre, @cuit)";
-            SqlCommand comandoNuevo = new SqlCommand(cadena, conexion);
-            comandoNuevo.Parameters.AddWithValue("@rs", RaSoTB.Text);
-            comandoNuevo.Parameters.AddWithValue("@dir", DirTB.Text);
-            comandoNuevo.Parameters.AddWithValue("@ciudad", CiudadTB.Text);
-            comandoNuevo.Parameters.AddWithValue("@telefono", TelefonoTB.Text);
-            comandoNuevo.Parameters.AddWithValue("@cuit", CuitTB.Text);
-            comandoNuevo.Parameters.AddWithValue("@rubro", RubroTB.Text);
-            comandoNuevo.Parameters.AddWithValue("@mail", MailTB.Text);
-            comandoNuevo.Parameters.AddWithValue("@codPost", CodPosTB.Text);
-            comandoNuevo.Parameters.AddWithValue("@nombre", NomConTB.Text);
-            int cant;
-            cant = comandoNuevo.ExecuteNonQuery();
-            if (cant == 1)
+            if (RaSoTB.Text.Trim() != "" && DirTB.Text.Trim() != "" && CiudadTB.Text.Trim() != "" && TelefonoTB.Text.Trim() != "" && CuitTB.Text.Trim() != "" && RaSoTB.Text.Trim() != "" && MailTB.Text.Trim() != "" && CodPosTB.Text.Trim() != "" && NomConTB.Text.Trim() != "")
             {
-                generarUsuario(CuitTB.Text);
+
+
+                String cadena = "INSERT INTO LOS_BORBOTONES.Proveedor ";
+                cadena += "(Provee_RS, Provee_Dom, Provee_Ciudad, Provee_Telefono, Provee_CUIT, Provee_Rubro, Provee_Mail, Provee_Cod_postal, Provee_Nombre_Contacto, User_name) ";
+                cadena += "VALUES ";
+                cadena += "(@rs, @dir, @ciudad, @telefono, @cuit, @rubro, @mail, @codPost, @nombre, @cuit)";
+                SqlCommand comandoNuevo = new SqlCommand(cadena, conexion);
+                comandoNuevo.Parameters.AddWithValue("@rs", RaSoTB.Text);
+                comandoNuevo.Parameters.AddWithValue("@dir", DirTB.Text);
+                comandoNuevo.Parameters.AddWithValue("@ciudad", CiudadTB.Text);
+                comandoNuevo.Parameters.AddWithValue("@telefono", TelefonoTB.Text);
+                comandoNuevo.Parameters.AddWithValue("@cuit", CuitTB.Text);
+                comandoNuevo.Parameters.AddWithValue("@rubro", RubroTB.Text);
+                comandoNuevo.Parameters.AddWithValue("@mail", MailTB.Text);
+                comandoNuevo.Parameters.AddWithValue("@codPost", CodPosTB.Text);
+                comandoNuevo.Parameters.AddWithValue("@nombre", NomConTB.Text);
+                int cant;
+                cant = comandoNuevo.ExecuteNonQuery();
+                if (cant == 1)
+                {
+                    generarUsuario(CuitTB.Text);
+                }
+                else
+                {
+                    MessageBox.Show("El Proveedor ya se encuentra registrado, intente nuevamente...");
+                }
             }
             else
             {
-                MessageBox.Show("El Proveedor ya se encuentra registrado, intente nuevamente...");
+                MessageBox.Show("Por favor comprete todos los campos de registro...");
             }
+
             conexion.Close();
         }
 
