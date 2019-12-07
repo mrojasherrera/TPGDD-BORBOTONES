@@ -20,13 +20,24 @@ namespace FrbaOfertas.AbmRol
         private void NuevoRolBtn_Click(object sender, EventArgs e)
         {
             AbmRol.NuevoRol nuevo = new AbmRol.NuevoRol();
-            nuevo.Show();
+            nuevo.ShowDialog();
         }
 
         private void FiltrarRolBtn_Click(object sender, EventArgs e)
         {
             AbmRol.FiltrarRol filtrar = new AbmRol.FiltrarRol();
-            filtrar.Show();
+            filtrar.ShowDialog();
+        }
+
+        private void RestaurarBtn_Click(object sender, EventArgs e)
+        {
+            AbmRol.RestaurarRol restaurar = new RestaurarRol();
+            restaurar.ShowDialog();
+        }
+
+        private void SalirBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

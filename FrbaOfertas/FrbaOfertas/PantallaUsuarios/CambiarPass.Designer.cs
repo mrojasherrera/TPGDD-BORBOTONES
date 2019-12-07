@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.UsuarioTB = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.PassTB = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.CambiarBtn = new System.Windows.Forms.Button();
             this.VolverBtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.UsuarioTB = new System.Windows.Forms.TextBox();
-            this.PassTB = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -51,7 +51,26 @@
             this.groupBox1.Size = new System.Drawing.Size(362, 106);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Cliente";
+            this.groupBox1.Text = "Usuario";
+            // 
+            // UsuarioTB
+            // 
+            this.UsuarioTB.Enabled = false;
+            this.UsuarioTB.Location = new System.Drawing.Point(88, 56);
+            this.UsuarioTB.Name = "UsuarioTB";
+            this.UsuarioTB.Size = new System.Drawing.Size(160, 20);
+            this.UsuarioTB.TabIndex = 1;
+            this.UsuarioTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(120, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(91, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "USUARIO";
             // 
             // groupBox2
             // 
@@ -63,6 +82,25 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Nueva contraseña";
+            // 
+            // PassTB
+            // 
+            this.PassTB.Location = new System.Drawing.Point(89, 56);
+            this.PassTB.Name = "PassTB";
+            this.PassTB.PasswordChar = '*';
+            this.PassTB.Size = new System.Drawing.Size(160, 20);
+            this.PassTB.TabIndex = 1;
+            this.PassTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(70, 33);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(195, 20);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "NUEVA CONTRASEÑA";
             // 
             // CambiarBtn
             // 
@@ -85,44 +123,6 @@
             this.VolverBtn.Text = "Volver";
             this.VolverBtn.UseVisualStyleBackColor = true;
             this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(120, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "USUARIO";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(70, 33);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(195, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "NUEVA CONTRASEÑA";
-            // 
-            // UsuarioTB
-            // 
-            this.UsuarioTB.Enabled = false;
-            this.UsuarioTB.Location = new System.Drawing.Point(88, 56);
-            this.UsuarioTB.Name = "UsuarioTB";
-            this.UsuarioTB.Size = new System.Drawing.Size(160, 20);
-            this.UsuarioTB.TabIndex = 1;
-            this.UsuarioTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // PassTB
-            // 
-            this.PassTB.Location = new System.Drawing.Point(89, 56);
-            this.PassTB.Name = "PassTB";
-            this.PassTB.PasswordChar = '*';
-            this.PassTB.Size = new System.Drawing.Size(160, 20);
-            this.PassTB.TabIndex = 1;
-            this.PassTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox1
             // 

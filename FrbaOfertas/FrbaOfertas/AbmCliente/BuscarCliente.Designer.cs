@@ -36,6 +36,7 @@
             this.ModificarTB = new System.Windows.Forms.Button();
             this.EliminarTB = new System.Windows.Forms.Button();
             this.VolverTB = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ClienteDGV)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -123,11 +124,22 @@
             this.VolverTB.UseVisualStyleBackColor = true;
             this.VolverTB.Click += new System.EventHandler(this.VolverTB_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 121);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(130, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Seleccione un cliente";
+            // 
             // BuscarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(664, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.VolverTB);
             this.Controls.Add(this.EliminarTB);
             this.Controls.Add(this.ModificarTB);
@@ -143,6 +155,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -156,5 +169,6 @@
         private System.Windows.Forms.Button ModificarTB;
         private System.Windows.Forms.Button EliminarTB;
         private System.Windows.Forms.Button VolverTB;
+        private System.Windows.Forms.Label label2;
     }
 }

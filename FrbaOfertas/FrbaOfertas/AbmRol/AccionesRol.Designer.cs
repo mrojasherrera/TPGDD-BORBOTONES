@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.RestaurarBtn = new System.Windows.Forms.Button();
             this.FiltrarRolBtn = new System.Windows.Forms.Button();
             this.NuevoRolBtn = new System.Windows.Forms.Button();
             this.SalirBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.RestaurarBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -50,11 +50,21 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Acciones";
             // 
+            // RestaurarBtn
+            // 
+            this.RestaurarBtn.Location = new System.Drawing.Point(100, 207);
+            this.RestaurarBtn.Name = "RestaurarBtn";
+            this.RestaurarBtn.Size = new System.Drawing.Size(132, 49);
+            this.RestaurarBtn.TabIndex = 2;
+            this.RestaurarBtn.Text = "Restaurar Rol";
+            this.RestaurarBtn.UseVisualStyleBackColor = true;
+            this.RestaurarBtn.Click += new System.EventHandler(this.RestaurarBtn_Click);
+            // 
             // FiltrarRolBtn
             // 
             this.FiltrarRolBtn.Location = new System.Drawing.Point(100, 123);
             this.FiltrarRolBtn.Name = "FiltrarRolBtn";
-            this.FiltrarRolBtn.Size = new System.Drawing.Size(123, 44);
+            this.FiltrarRolBtn.Size = new System.Drawing.Size(132, 49);
             this.FiltrarRolBtn.TabIndex = 1;
             this.FiltrarRolBtn.Text = "Filtrar Rol";
             this.FiltrarRolBtn.UseVisualStyleBackColor = true;
@@ -64,7 +74,7 @@
             // 
             this.NuevoRolBtn.Location = new System.Drawing.Point(100, 45);
             this.NuevoRolBtn.Name = "NuevoRolBtn";
-            this.NuevoRolBtn.Size = new System.Drawing.Size(123, 44);
+            this.NuevoRolBtn.Size = new System.Drawing.Size(132, 49);
             this.NuevoRolBtn.TabIndex = 0;
             this.NuevoRolBtn.Text = "Nuevo Rol";
             this.NuevoRolBtn.UseVisualStyleBackColor = true;
@@ -78,6 +88,7 @@
             this.SalirBtn.TabIndex = 1;
             this.SalirBtn.Text = "Salir";
             this.SalirBtn.UseVisualStyleBackColor = true;
+            this.SalirBtn.Click += new System.EventHandler(this.SalirBtn_Click);
             // 
             // pictureBox1
             // 
@@ -88,15 +99,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            // 
-            // RestaurarBtn
-            // 
-            this.RestaurarBtn.Location = new System.Drawing.Point(100, 207);
-            this.RestaurarBtn.Name = "RestaurarBtn";
-            this.RestaurarBtn.Size = new System.Drawing.Size(123, 44);
-            this.RestaurarBtn.TabIndex = 2;
-            this.RestaurarBtn.Text = "Restaurar Rol";
-            this.RestaurarBtn.UseVisualStyleBackColor = true;
             // 
             // AccionesRol
             // 

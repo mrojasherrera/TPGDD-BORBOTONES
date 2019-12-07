@@ -186,7 +186,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ListadoDGV);
             this.Name = "Estadistico";
-            this.Text = "Form1";
+            this.Text = "Listado estadístico";
             ((System.ComponentModel.ISupportInitialize)(this.ListadoDGV)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

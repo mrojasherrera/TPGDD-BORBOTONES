@@ -39,6 +39,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.FacturarBtn = new System.Windows.Forms.Button();
             this.VolverBtn = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProvDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -120,7 +121,7 @@
             this.ProvDGV.AllowUserToAddRows = false;
             this.ProvDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.ProvDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ProvDGV.Location = new System.Drawing.Point(13, 153);
+            this.ProvDGV.Location = new System.Drawing.Point(13, 168);
             this.ProvDGV.Name = "ProvDGV";
             this.ProvDGV.Size = new System.Drawing.Size(406, 313);
             this.ProvDGV.TabIndex = 3;
@@ -157,11 +158,22 @@
             this.VolverBtn.UseVisualStyleBackColor = true;
             this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(13, 149);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(155, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Selecciones un proveedor";
+            // 
             // FacturarProv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(658, 478);
+            this.ClientSize = new System.Drawing.Size(658, 493);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.VolverBtn);
             this.Controls.Add(this.FacturarBtn);
             this.Controls.Add(this.pictureBox1);
@@ -174,6 +186,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ProvDGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -190,5 +203,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button FacturarBtn;
         private System.Windows.Forms.Button VolverBtn;
+        private System.Windows.Forms.Label label4;
     }
 }
