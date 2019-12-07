@@ -28,29 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ListadoDGV = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ListarCB = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.UnSemestreCB = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.VolverBtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.BuscarBtn = new System.Windows.Forms.Button();
-            this.ListarCB = new System.Windows.Forms.ComboBox();
-            this.UnSemestreCB = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.label3 = new System.Windows.Forms.Label();
+            this.AnioCB = new System.Windows.Forms.ComboBox();
+            this.mostrarLB = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.ListadoDGV)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // ListadoDGV
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 246);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(454, 220);
-            this.dataGridView1.TabIndex = 0;
+            this.ListadoDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.ListadoDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ListadoDGV.Location = new System.Drawing.Point(12, 246);
+            this.ListadoDGV.Name = "ListadoDGV";
+            this.ListadoDGV.Size = new System.Drawing.Size(454, 220);
+            this.ListadoDGV.TabIndex = 0;
             // 
             // groupBox1
             // 
@@ -63,8 +67,32 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Listado";
             // 
+            // ListarCB
+            // 
+            this.ListarCB.FormattingEnabled = true;
+            this.ListarCB.Items.AddRange(new object[] {
+            "Elegir una opción...",
+            "Proveedores con mayor porcentaje de descuento ofrecido en sus ofertas",
+            "Proveedores con mayor facturación"});
+            this.ListarCB.Location = new System.Drawing.Point(103, 42);
+            this.ListarCB.Name = "ListarCB";
+            this.ListarCB.Size = new System.Drawing.Size(344, 21);
+            this.ListarCB.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(20, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "LISTAR:";
+            // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.AnioCB);
+            this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.UnSemestreCB);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Location = new System.Drawing.Point(12, 120);
@@ -73,6 +101,28 @@
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Periodo";
+            // 
+            // UnSemestreCB
+            // 
+            this.UnSemestreCB.FormattingEnabled = true;
+            this.UnSemestreCB.Items.AddRange(new object[] {
+            "Elegir una opción",
+            "Pimer semestre del año",
+            "Segundo semestre del año"});
+            this.UnSemestreCB.Location = new System.Drawing.Point(167, 60);
+            this.UnSemestreCB.Name = "UnSemestreCB";
+            this.UnSemestreCB.Size = new System.Drawing.Size(281, 21);
+            this.UnSemestreCB.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(21, 62);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(111, 20);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "SEMESTRE:";
             // 
             // pictureBox1
             // 
@@ -95,26 +145,6 @@
             this.VolverBtn.UseVisualStyleBackColor = true;
             this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "LISTAR:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(24, 46);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "SEMESTRE:";
-            // 
             // BuscarBtn
             // 
             this.BuscarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -126,56 +156,62 @@
             this.BuscarBtn.UseVisualStyleBackColor = true;
             this.BuscarBtn.Click += new System.EventHandler(this.BuscarBtn_Click);
             // 
-            // ListarCB
+            // label3
             // 
-            this.ListarCB.FormattingEnabled = true;
-            this.ListarCB.Items.AddRange(new object[] {
-            "Elegir una opción...",
-            "Proveedores con mayor porcentaje de descuento ofrecido en sus ofertas",
-            "Proveedores con mayor facturación"});
-            this.ListarCB.Location = new System.Drawing.Point(103, 42);
-            this.ListarCB.Name = "ListarCB";
-            this.ListarCB.Size = new System.Drawing.Size(344, 21);
-            this.ListarCB.TabIndex = 1;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(25, 29);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "AÑO:";
             // 
-            // UnSemestreCB
+            // AnioCB
             // 
-            this.UnSemestreCB.FormattingEnabled = true;
-            this.UnSemestreCB.Items.AddRange(new object[] {
-            "Elegir una opción",
-            "Pimer semestre del año",
-            "Segundo semestre del año"});
-            this.UnSemestreCB.Location = new System.Drawing.Point(170, 44);
-            this.UnSemestreCB.Name = "UnSemestreCB";
-            this.UnSemestreCB.Size = new System.Drawing.Size(278, 21);
-            this.UnSemestreCB.TabIndex = 1;
+            this.AnioCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AnioCB.FormattingEnabled = true;
+            this.AnioCB.Location = new System.Drawing.Point(327, 28);
+            this.AnioCB.Name = "AnioCB";
+            this.AnioCB.Size = new System.Drawing.Size(121, 21);
+            this.AnioCB.TabIndex = 3;
+            // 
+            // mostrarLB
+            // 
+            this.mostrarLB.AutoSize = true;
+            this.mostrarLB.Location = new System.Drawing.Point(544, 343);
+            this.mostrarLB.Name = "mostrarLB";
+            this.mostrarLB.Size = new System.Drawing.Size(35, 13);
+            this.mostrarLB.TabIndex = 6;
+            this.mostrarLB.Text = "label4";
             // 
             // Estadistico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(720, 478);
+            this.Controls.Add(this.mostrarLB);
             this.Controls.Add(this.BuscarBtn);
             this.Controls.Add(this.VolverBtn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.ListadoDGV);
             this.Name = "Estadistico";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ListadoDGV)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView ListadoDGV;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -185,5 +221,8 @@
         private System.Windows.Forms.Button BuscarBtn;
         private System.Windows.Forms.ComboBox ListarCB;
         private System.Windows.Forms.ComboBox UnSemestreCB;
+        private System.Windows.Forms.ComboBox AnioCB;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label mostrarLB;
     }
 }
