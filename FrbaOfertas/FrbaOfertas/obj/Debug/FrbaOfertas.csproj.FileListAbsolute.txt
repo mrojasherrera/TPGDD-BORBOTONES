@@ -92,7 +92,6 @@ C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfer
 C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.CrearOferta.NuevaOferta.resources
 C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.Facturar.EmitirFac.resources
 C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.Facturar.FacturarProv.resources
-C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.ListadoEstadistico.Form1.resources
 C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.Login.resources
 C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.PantallaUsuarios.PantallaAdmin.resources
 C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.PantallaUsuarios.PantallaCliente.resources
@@ -100,3 +99,4 @@ C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfer
 C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.Properties.Resources.resources
 C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.csproj.GenerateResource.Cache
 C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.PantallaUsuarios.CambiarPass.resources
+C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.ListadoEstadistico.Estadistico.resources
