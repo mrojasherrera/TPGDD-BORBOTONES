@@ -33,6 +33,7 @@ namespace FrbaOfertas.AbmRol
             this.Close();
         }
 
+        //Saca una funcionalidad del segundo DGV
         private void EliminarBtn_Click(object sender, EventArgs e)
         {
             if (NuevasFuncDGV.Rows.Count == 0)
@@ -45,6 +46,7 @@ namespace FrbaOfertas.AbmRol
             }
         }
 
+        //agrega una funcionalidad de un DGV a otro DGV
         private void AgregarBtn_Click(object sender, EventArgs e)
         {
             if (FuncDGV.Rows.Count == 0)
@@ -71,21 +73,41 @@ namespace FrbaOfertas.AbmRol
             }
         }
 
+        //buscar id de funcionalidad
+        public int buscarId(String funcionalidad) {
+            string cadena = "select Func_Id ";
+            cadena += "from LOS_BORBOTONES.Funcionalidad ";
+            cadena += "where Func_Nombre = @funcNom";
+            SqlCommand comandoFunc = new SqlCommand(cadena, conexion);
+            comandoFunc.Parameters.AddWithValue("@funcNom", funcionalidad);
+            SqlDataAdapter data = new SqlDataAdapter(comandoFunc);
+            DataTable tabla = new DataTable();
+            data.Fill(tabla);
+            int id = Convert.ToInt32(tabla.Rows[0][0].ToString());
+            return id;
+        }
+
+        //inserta los id de funcionalidades y de rol correspondientes
         public void cargarRolXFunc(int id) {
             foreach (DataGridViewRow row in NuevasFuncDGV.Rows) {
+                  
+                int idFunc = buscarId(row.Cells[0].Value.ToString());
                 string cadena = "INSERT INTO LOS_BORBOTONES.Func_Rol ";
                 cadena += "(Rol_Id, Func_Id) ";
                 cadena += "Values ";
-                cadena += "(id, SELECT Func_Id FROM LOS_BORBOTONES.Funcionalidades WHERE Func_Nombre = @nombre )";
+                cadena += "(@idRol, @idFunc)";
                 SqlCommand comandoExiste = new SqlCommand(cadena, conexion);
-                comandoExiste.Parameters.AddWithValue("@nombre", row.Cells[0].Value);            
+                comandoExiste.Parameters.AddWithValue("@idFunc", idFunc);
+                comandoExiste.Parameters.AddWithValue("@idRol", id);
+                comandoExiste.ExecuteNonQuery();
             }
             MessageBox.Show("El rol se creó correctamente...");
-        
+            RolTB.Clear();
+            NuevasFuncDGV.Rows.Clear();
+                 
         }
-
        
-
+        //evalua si el rol que se ingresa ya existe
         public Boolean existeRol() {
             String rol = RolTB.Text.Trim();
             string cadena = "SELECT * FROM LOS_BORBOTONES.Role ";
@@ -123,13 +145,9 @@ namespace FrbaOfertas.AbmRol
                         SqlCommand comandoNuevo = new SqlCommand(cadena, conexion);
                         comandoNuevo.Parameters.AddWithValue("@rol", rol);
                         int result = Convert.ToInt32(comandoNuevo.ExecuteScalar());
+                                               
+                         cargarRolXFunc(result);   
                         
-                        int cant;
-                        cant = comandoNuevo.ExecuteNonQuery();
-                        if (cant == 1)
-                        {
-                            cargarRolXFunc(result);   
-                        }
                     }
                     else
                     {
