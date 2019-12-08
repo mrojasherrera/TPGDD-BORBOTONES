@@ -86,7 +86,6 @@ C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfer
 C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.AbmRol.ModificarRol.resources
 C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.AbmRol.NuevoRol.resources
 C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.AbmRol.RestaurarRol.resources
-C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.AbmRol.RolEncontrado.resources
 C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.CargaCredito.Cargar.resources
 C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.ComprarOferta.Ofertas.resources
 C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.CrearOferta.NuevaOferta.resources

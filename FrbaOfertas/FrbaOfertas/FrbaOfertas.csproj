@@ -134,12 +134,6 @@
     <Compile Include="AbmRol\RestaurarRol.Designer.cs">
       <DependentUpon>RestaurarRol.cs</DependentUpon>
     </Compile>
-    <Compile Include="AbmRol\RolEncontrado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AbmRol\RolEncontrado.Designer.cs">
-      <DependentUpon>RolEncontrado.cs</DependentUpon>
-    </Compile>
     <Compile Include="CargaCredito\Cargar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,9 +256,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AbmRol\RestaurarRol.resx">
       <DependentUpon>RestaurarRol.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AbmRol\RolEncontrado.resx">
-      <DependentUpon>RolEncontrado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CargaCredito\Cargar.resx">
       <DependentUpon>Cargar.cs</DependentUpon>

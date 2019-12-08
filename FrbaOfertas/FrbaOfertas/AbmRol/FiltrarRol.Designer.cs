@@ -29,18 +29,21 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.RolTB = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.BuscarBtn = new System.Windows.Forms.Button();
+            this.ModificarBtn = new System.Windows.Forms.Button();
             this.VolverBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.RolCB = new System.Windows.Forms.ComboBox();
+            this.RolDGV = new System.Windows.Forms.DataGridView();
+            this.EliminarBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RolDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.RolCB);
+            this.groupBox1.Controls.Add(this.RolTB);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 21);
             this.groupBox1.Name = "groupBox1";
@@ -48,6 +51,14 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Buscar";
+            // 
+            // RolTB
+            // 
+            this.RolTB.Location = new System.Drawing.Point(133, 37);
+            this.RolTB.Name = "RolTB";
+            this.RolTB.Size = new System.Drawing.Size(167, 20);
+            this.RolTB.TabIndex = 1;
+            this.RolTB.TextChanged += new System.EventHandler(this.RolTB_TextChanged);
             // 
             // label1
             // 
@@ -59,24 +70,25 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ROL:";
             // 
-            // BuscarBtn
+            // ModificarBtn
             // 
-            this.BuscarBtn.Location = new System.Drawing.Point(236, 161);
-            this.BuscarBtn.Name = "BuscarBtn";
-            this.BuscarBtn.Size = new System.Drawing.Size(122, 34);
-            this.BuscarBtn.TabIndex = 1;
-            this.BuscarBtn.Text = "Buscar";
-            this.BuscarBtn.UseVisualStyleBackColor = true;
-            this.BuscarBtn.Click += new System.EventHandler(this.BuscarBtn_Click);
+            this.ModificarBtn.Location = new System.Drawing.Point(380, 213);
+            this.ModificarBtn.Name = "ModificarBtn";
+            this.ModificarBtn.Size = new System.Drawing.Size(102, 41);
+            this.ModificarBtn.TabIndex = 1;
+            this.ModificarBtn.Text = "Modificar Rol";
+            this.ModificarBtn.UseVisualStyleBackColor = true;
+            this.ModificarBtn.Click += new System.EventHandler(this.ModificarBtn_Click);
             // 
             // VolverBtn
             // 
-            this.VolverBtn.Location = new System.Drawing.Point(55, 161);
+            this.VolverBtn.Location = new System.Drawing.Point(453, 275);
             this.VolverBtn.Name = "VolverBtn";
-            this.VolverBtn.Size = new System.Drawing.Size(122, 34);
+            this.VolverBtn.Size = new System.Drawing.Size(102, 41);
             this.VolverBtn.TabIndex = 2;
             this.VolverBtn.Text = "Volver";
             this.VolverBtn.UseVisualStyleBackColor = true;
+            this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);
             // 
             // pictureBox1
             // 
@@ -88,21 +100,37 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // RolCB
+            // RolDGV
             // 
-            this.RolCB.FormattingEnabled = true;
-            this.RolCB.Location = new System.Drawing.Point(115, 39);
-            this.RolCB.Name = "RolCB";
-            this.RolCB.Size = new System.Drawing.Size(181, 21);
-            this.RolCB.TabIndex = 1;
+            this.RolDGV.AllowUserToAddRows = false;
+            this.RolDGV.AllowUserToDeleteRows = false;
+            this.RolDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.RolDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.RolDGV.Location = new System.Drawing.Point(13, 126);
+            this.RolDGV.Name = "RolDGV";
+            this.RolDGV.ReadOnly = true;
+            this.RolDGV.Size = new System.Drawing.Size(345, 190);
+            this.RolDGV.TabIndex = 3;
+            // 
+            // EliminarBtn
+            // 
+            this.EliminarBtn.Location = new System.Drawing.Point(524, 213);
+            this.EliminarBtn.Name = "EliminarBtn";
+            this.EliminarBtn.Size = new System.Drawing.Size(102, 41);
+            this.EliminarBtn.TabIndex = 4;
+            this.EliminarBtn.Text = "Eliminar Rol";
+            this.EliminarBtn.UseVisualStyleBackColor = true;
+            this.EliminarBtn.Click += new System.EventHandler(this.EliminarBtn_Click);
             // 
             // FiltrarRol
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(654, 223);
+            this.ClientSize = new System.Drawing.Size(654, 348);
+            this.Controls.Add(this.EliminarBtn);
+            this.Controls.Add(this.RolDGV);
             this.Controls.Add(this.VolverBtn);
-            this.Controls.Add(this.BuscarBtn);
+            this.Controls.Add(this.ModificarBtn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Name = "FiltrarRol";
@@ -110,6 +138,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RolDGV)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -119,8 +148,10 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button BuscarBtn;
+        private System.Windows.Forms.Button ModificarBtn;
         private System.Windows.Forms.Button VolverBtn;
-        private System.Windows.Forms.ComboBox RolCB;
+        private System.Windows.Forms.TextBox RolTB;
+        private System.Windows.Forms.DataGridView RolDGV;
+        private System.Windows.Forms.Button EliminarBtn;
     }
 }

@@ -52,6 +52,7 @@
             // 
             // RestaurarBtn
             // 
+            this.RestaurarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RestaurarBtn.Location = new System.Drawing.Point(100, 207);
             this.RestaurarBtn.Name = "RestaurarBtn";
             this.RestaurarBtn.Size = new System.Drawing.Size(132, 49);
@@ -62,6 +63,7 @@
             // 
             // FiltrarRolBtn
             // 
+            this.FiltrarRolBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FiltrarRolBtn.Location = new System.Drawing.Point(100, 123);
             this.FiltrarRolBtn.Name = "FiltrarRolBtn";
             this.FiltrarRolBtn.Size = new System.Drawing.Size(132, 49);
@@ -72,6 +74,7 @@
             // 
             // NuevoRolBtn
             // 
+            this.NuevoRolBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NuevoRolBtn.Location = new System.Drawing.Point(100, 45);
             this.NuevoRolBtn.Name = "NuevoRolBtn";
             this.NuevoRolBtn.Size = new System.Drawing.Size(132, 49);
@@ -82,11 +85,12 @@
             // 
             // SalirBtn
             // 
+            this.SalirBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SalirBtn.Location = new System.Drawing.Point(414, 265);
             this.SalirBtn.Name = "SalirBtn";
             this.SalirBtn.Size = new System.Drawing.Size(123, 50);
             this.SalirBtn.TabIndex = 1;
-            this.SalirBtn.Text = "Salir";
+            this.SalirBtn.Text = "Volver";
             this.SalirBtn.UseVisualStyleBackColor = true;
             this.SalirBtn.Click += new System.EventHandler(this.SalirBtn_Click);
             // 
