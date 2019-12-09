@@ -74,7 +74,7 @@ namespace FrbaOfertas.AbmRol
             cant = comandoEliminar.ExecuteNonQuery();
             if (cant == 1)
             {
-                MessageBox.Show("Se eliminó exitosamente Rol...");
+                MessageBox.Show("Se eliminó exitosamente el Rol...");
 
             }
             conexion.Close();

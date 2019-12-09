@@ -29,17 +29,21 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.RestaurarBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.RestaurarBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.RolesDGV = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.RolTB = new System.Windows.Forms.TextBox();
+            this.VolverBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RolesDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.RolTB);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
@@ -47,15 +51,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Restaurar rol";
-            // 
-            // RestaurarBtn
-            // 
-            this.RestaurarBtn.Location = new System.Drawing.Point(98, 139);
-            this.RestaurarBtn.Name = "RestaurarBtn";
-            this.RestaurarBtn.Size = new System.Drawing.Size(121, 38);
-            this.RestaurarBtn.TabIndex = 1;
-            this.RestaurarBtn.Text = "Restaurar";
-            this.RestaurarBtn.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -67,13 +62,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ROL:";
             // 
-            // comboBox1
+            // RestaurarBtn
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(85, 37);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(168, 21);
-            this.comboBox1.TabIndex = 1;
+            this.RestaurarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RestaurarBtn.Location = new System.Drawing.Point(345, 230);
+            this.RestaurarBtn.Name = "RestaurarBtn";
+            this.RestaurarBtn.Size = new System.Drawing.Size(121, 38);
+            this.RestaurarBtn.TabIndex = 1;
+            this.RestaurarBtn.Text = "Restaurar";
+            this.RestaurarBtn.UseVisualStyleBackColor = true;
+            this.RestaurarBtn.Click += new System.EventHandler(this.RestaurarBtn_Click);
             // 
             // pictureBox1
             // 
@@ -85,11 +83,55 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // RolesDGV
+            // 
+            this.RolesDGV.AllowUserToAddRows = false;
+            this.RolesDGV.AllowUserToDeleteRows = false;
+            this.RolesDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.RolesDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.RolesDGV.Location = new System.Drawing.Point(13, 155);
+            this.RolesDGV.Name = "RolesDGV";
+            this.RolesDGV.ReadOnly = true;
+            this.RolesDGV.Size = new System.Drawing.Size(290, 220);
+            this.RolesDGV.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(13, 136);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 16);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Elegir un rol";
+            // 
+            // RolTB
+            // 
+            this.RolTB.Location = new System.Drawing.Point(86, 38);
+            this.RolTB.Name = "RolTB";
+            this.RolTB.Size = new System.Drawing.Size(171, 20);
+            this.RolTB.TabIndex = 1;
+            this.RolTB.TextChanged += new System.EventHandler(this.RolTB_TextChanged);
+            // 
+            // VolverBtn
+            // 
+            this.VolverBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VolverBtn.Location = new System.Drawing.Point(345, 304);
+            this.VolverBtn.Name = "VolverBtn";
+            this.VolverBtn.Size = new System.Drawing.Size(121, 38);
+            this.VolverBtn.TabIndex = 5;
+            this.VolverBtn.Text = "Volver";
+            this.VolverBtn.UseVisualStyleBackColor = true;
+            this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);
+            // 
             // RestaurarRol
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 207);
+            this.ClientSize = new System.Drawing.Size(500, 398);
+            this.Controls.Add(this.VolverBtn);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.RolesDGV);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.RestaurarBtn);
             this.Controls.Add(this.groupBox1);
@@ -98,16 +140,21 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RolesDGV)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button RestaurarBtn;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridView RolesDGV;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox RolTB;
+        private System.Windows.Forms.Button VolverBtn;
     }
 }
