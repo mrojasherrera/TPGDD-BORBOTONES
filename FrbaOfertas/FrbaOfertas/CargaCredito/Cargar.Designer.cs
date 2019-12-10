@@ -29,86 +29,86 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.DniCB = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.TipoPago = new System.Windows.Forms.ComboBox();
-            this.Monto = new System.Windows.Forms.NumericUpDown();
-            this.DatoTarjeta = new System.Windows.Forms.TextBox();
+            this.TipoPagoCB = new System.Windows.Forms.ComboBox();
+            this.MontoNUD = new System.Windows.Forms.NumericUpDown();
+            this.DatoTarjetaTB = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CargarBtn = new System.Windows.Forms.Button();
             this.VolverBtn = new System.Windows.Forms.Button();
+            this.ClientesDGV = new System.Windows.Forms.DataGridView();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.DniTB = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Monto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MontoNUD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ClientesDGV)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.DniCB);
+            this.groupBox1.Controls.Add(this.DniTB);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.TipoPago);
-            this.groupBox1.Controls.Add(this.Monto);
-            this.groupBox1.Controls.Add(this.DatoTarjeta);
-            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.TipoPagoCB);
+            this.groupBox1.Controls.Add(this.MontoNUD);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(408, 201);
+            this.groupBox1.Size = new System.Drawing.Size(408, 155);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cargar crédito";
-            // 
-            // DniCB
-            // 
-            this.DniCB.DisplayMember = "Cli_Dni";
-            this.DniCB.FormattingEnabled = true;
-            this.DniCB.Location = new System.Drawing.Point(224, 150);
-            this.DniCB.Name = "DniCB";
-            this.DniCB.Size = new System.Drawing.Size(166, 21);
-            this.DniCB.TabIndex = 18;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(18, 151);
+            this.label5.Location = new System.Drawing.Point(18, 113);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 20);
+            this.label5.Size = new System.Drawing.Size(168, 20);
             this.label5.TabIndex = 17;
-            this.label5.Text = "DNI:";
+            this.label5.Text = "FILTRAR CLIENTE:";
             // 
-            // TipoPago
+            // TipoPagoCB
             // 
-            this.TipoPago.DisplayMember = "Tipo_Pago_Desc";
-            this.TipoPago.FormattingEnabled = true;
-            this.TipoPago.Location = new System.Drawing.Point(224, 33);
-            this.TipoPago.Name = "TipoPago";
-            this.TipoPago.Size = new System.Drawing.Size(167, 21);
-            this.TipoPago.TabIndex = 16;
+            this.TipoPagoCB.DisplayMember = "Tipo_Pago_Desc";
+            this.TipoPagoCB.FormattingEnabled = true;
+            this.TipoPagoCB.Location = new System.Drawing.Point(224, 33);
+            this.TipoPagoCB.Name = "TipoPagoCB";
+            this.TipoPagoCB.Size = new System.Drawing.Size(167, 21);
+            this.TipoPagoCB.TabIndex = 16;
+            this.TipoPagoCB.SelectedIndexChanged += new System.EventHandler(this.TipoPagoCB_SelectedIndexChanged);
             // 
-            // Monto
+            // MontoNUD
             // 
-            this.Monto.Location = new System.Drawing.Point(224, 72);
-            this.Monto.Name = "Monto";
-            this.Monto.Size = new System.Drawing.Size(166, 20);
-            this.Monto.TabIndex = 15;
+            this.MontoNUD.Location = new System.Drawing.Point(224, 72);
+            this.MontoNUD.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.MontoNUD.Name = "MontoNUD";
+            this.MontoNUD.Size = new System.Drawing.Size(167, 20);
+            this.MontoNUD.TabIndex = 15;
             // 
-            // DatoTarjeta
+            // DatoTarjetaTB
             // 
-            this.DatoTarjeta.Location = new System.Drawing.Point(224, 113);
-            this.DatoTarjeta.Name = "DatoTarjeta";
-            this.DatoTarjeta.Size = new System.Drawing.Size(166, 20);
-            this.DatoTarjeta.TabIndex = 14;
+            this.DatoTarjetaTB.Location = new System.Drawing.Point(224, 29);
+            this.DatoTarjetaTB.Name = "DatoTarjetaTB";
+            this.DatoTarjetaTB.Size = new System.Drawing.Size(376, 20);
+            this.DatoTarjetaTB.TabIndex = 14;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(18, 113);
+            this.label4.Location = new System.Drawing.Point(18, 29);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(187, 20);
             this.label4.TabIndex = 13;
@@ -137,37 +137,84 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::FrbaOfertas.Properties.Resources.images1;
-            this.pictureBox1.Location = new System.Drawing.Point(438, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(427, 23);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(279, 191);
+            this.pictureBox1.Size = new System.Drawing.Size(196, 145);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
             // CargarBtn
             // 
-            this.CargarBtn.Location = new System.Drawing.Point(263, 238);
+            this.CargarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CargarBtn.Location = new System.Drawing.Point(509, 342);
             this.CargarBtn.Name = "CargarBtn";
-            this.CargarBtn.Size = new System.Drawing.Size(95, 41);
+            this.CargarBtn.Size = new System.Drawing.Size(104, 41);
             this.CargarBtn.TabIndex = 10;
-            this.CargarBtn.Text = "Cargar";
+            this.CargarBtn.Text = "Cargar Crédito";
             this.CargarBtn.UseVisualStyleBackColor = true;
+            this.CargarBtn.Click += new System.EventHandler(this.CargarBtn_Click);
             // 
             // VolverBtn
             // 
-            this.VolverBtn.Location = new System.Drawing.Point(123, 238);
+            this.VolverBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VolverBtn.Location = new System.Drawing.Point(509, 429);
             this.VolverBtn.Name = "VolverBtn";
-            this.VolverBtn.Size = new System.Drawing.Size(95, 41);
+            this.VolverBtn.Size = new System.Drawing.Size(104, 41);
             this.VolverBtn.TabIndex = 9;
             this.VolverBtn.Text = "Volver";
             this.VolverBtn.UseVisualStyleBackColor = true;
             this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);
             // 
+            // ClientesDGV
+            // 
+            this.ClientesDGV.AllowUserToAddRows = false;
+            this.ClientesDGV.AllowUserToDeleteRows = false;
+            this.ClientesDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.ClientesDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ClientesDGV.Location = new System.Drawing.Point(12, 274);
+            this.ClientesDGV.Name = "ClientesDGV";
+            this.ClientesDGV.ReadOnly = true;
+            this.ClientesDGV.Size = new System.Drawing.Size(475, 259);
+            this.ClientesDGV.TabIndex = 11;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.DatoTarjetaTB);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Location = new System.Drawing.Point(13, 175);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(611, 71);
+            this.groupBox2.TabIndex = 15;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Datos";
+            // 
+            // DniTB
+            // 
+            this.DniTB.Location = new System.Drawing.Point(224, 112);
+            this.DniTB.Name = "DniTB";
+            this.DniTB.Size = new System.Drawing.Size(167, 20);
+            this.DniTB.TabIndex = 18;
+            this.DniTB.TextChanged += new System.EventHandler(this.DniTB_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 258);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(130, 13);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Seleccione un cliente";
+            // 
             // Cargar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(729, 298);
+            this.ClientSize = new System.Drawing.Size(635, 543);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.ClientesDGV);
             this.Controls.Add(this.CargarBtn);
             this.Controls.Add(this.VolverBtn);
             this.Controls.Add(this.pictureBox1);
@@ -176,25 +223,32 @@
             this.Text = "Cargar";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Monto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MontoNUD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ClientesDGV)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox DniCB;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox TipoPago;
-        private System.Windows.Forms.NumericUpDown Monto;
-        private System.Windows.Forms.TextBox DatoTarjeta;
+        private System.Windows.Forms.ComboBox TipoPagoCB;
+        private System.Windows.Forms.NumericUpDown MontoNUD;
+        private System.Windows.Forms.TextBox DatoTarjetaTB;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button CargarBtn;
         private System.Windows.Forms.Button VolverBtn;
+        private System.Windows.Forms.DataGridView ClientesDGV;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox DniTB;
+        private System.Windows.Forms.Label label1;
     }
 }
