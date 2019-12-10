@@ -188,6 +188,9 @@ namespace FrbaOfertas.AbmRol
             }
            
            MessageBox.Show("Se actualizaron los datos correctamente...");
+           this.Hide();
+           AbmRol.FiltrarRol filtrar = new FiltrarRol();
+           filtrar.ShowDialog();
         }
     }
 }

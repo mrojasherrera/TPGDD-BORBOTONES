@@ -48,7 +48,7 @@ namespace FrbaOfertas
         }
 
         //LOGUEO DEL PROVEEDOR
-        public void loguearProveedor(String usuario, string pass)
+        public void loguearProveedor(String usuario, string pass, string rol)
         {
             try
             {
@@ -56,11 +56,12 @@ namespace FrbaOfertas
                 string cadena = "select u.User_name, r.Rol_Nombre, u.Habilitado ";
                 cadena += "from LOS_BORBOTONES.Usuario u join LOS_BORBOTONES.Rol_Usuario ru on (u.User_name = ru.User_name) ";
                 cadena += "join LOS_BORBOTONES.Role r on(ru.Rol_Id = r.Rol_Id) ";
-                cadena += "where r.Rol_Nombre = 'Proveedor' and u.User_Name=@usuario  ";
+                cadena += "where r.Rol_Nombre = @rol and u.User_Name=@usuario  ";
                 cadena += "and Password = HASHBYTES('SHA2_256', CAST( (cast(@pass as nvarchar(20))) AS varbinary(70)))";
                 SqlCommand comandoProv = new SqlCommand(cadena, conexion);
-                comandoProv.Parameters.AddWithValue("usuario", usuario);
-                comandoProv.Parameters.AddWithValue("pass", pass);
+                comandoProv.Parameters.AddWithValue("@usuario", usuario);
+                comandoProv.Parameters.AddWithValue("@pass", pass); 
+                comandoProv.Parameters.AddWithValue("@rol", rol);
 
                 SqlDataAdapter data2 = new SqlDataAdapter(comandoProv);
                 DataTable tabla2 = new DataTable();
@@ -103,7 +104,7 @@ namespace FrbaOfertas
 
 
         //LOGUEO DEL ADMINISTRADOR
-        public void loguearAdministrador(string usuario, string pass)
+        public void loguearAdministrador(string usuario, string pass, string rol)
         {
             try
             {
@@ -111,11 +112,12 @@ namespace FrbaOfertas
                 string cadena = "select u.User_name, r.Rol_Nombre ";
                 cadena += "from LOS_BORBOTONES.Usuario u join LOS_BORBOTONES.Rol_Usuario ru on (u.User_name = ru.User_name) ";
                 cadena += "join LOS_BORBOTONES.Role r on(ru.Rol_Id = r.Rol_Id) ";
-                cadena += "where r.Rol_Nombre = 'Administrador General' and u.User_Name=@usuario ";
+                cadena += "where r.Rol_Nombre = @rol and u.User_Name=@usuario ";
                 cadena += "and Password = HASHBYTES('SHA2_256', CAST( cast(@pass as nvarchar(20)) AS varbinary(70)))";
                 SqlCommand comandoAdm = new SqlCommand(cadena, conexion);
-                comandoAdm.Parameters.AddWithValue("usuario", usuario);
-                comandoAdm.Parameters.AddWithValue("pass", pass);
+                comandoAdm.Parameters.AddWithValue("@usuario", usuario);
+                comandoAdm.Parameters.AddWithValue("@pass", pass);
+                comandoAdm.Parameters.AddWithValue("@rol", rol);
 
                 SqlDataAdapter data3 = new SqlDataAdapter(comandoAdm);
                 DataTable tabla3 = new DataTable();
@@ -157,7 +159,7 @@ namespace FrbaOfertas
         }
 
         //LOGUEO DEL CLIENTE
-        public void logearCliente(String usuario, String pass)
+        public void logearCliente(String usuario, String pass, string rol)
         {
             try
             {
@@ -165,11 +167,12 @@ namespace FrbaOfertas
                 String cadena = "select u.User_name, r.Rol_Nombre, u.Habilitado ";
                 cadena += "from LOS_BORBOTONES.Usuario u join LOS_BORBOTONES.Rol_Usuario ru on (u.User_name = ru.User_name) ";
                 cadena += "join LOS_BORBOTONES.Role r on(ru.Rol_Id = r.Rol_Id) ";
-                cadena += "where r.Rol_Nombre ='Cliente' and u.User_name=@usuario ";
+                cadena += "where r.Rol_Nombre =@rol and u.User_name=@usuario ";
                 cadena += "and Password = HASHBYTES('SHA2_256', CAST( (cast (@pass as nvarchar(20))) AS varbinary(70)))";
                 SqlCommand comandoCliente = new SqlCommand(cadena, conexion);
-                comandoCliente.Parameters.AddWithValue("usuario", usuario);
-                comandoCliente.Parameters.AddWithValue("pass", pass);
+                comandoCliente.Parameters.AddWithValue("@usuario", usuario);
+                comandoCliente.Parameters.AddWithValue("@pass", pass);
+                comandoCliente.Parameters.AddWithValue("@rol", rol);
                 SqlDataAdapter data = new SqlDataAdapter(comandoCliente);
                 DataTable tabla = new DataTable();
                 data.Fill(tabla);
@@ -251,15 +254,15 @@ namespace FrbaOfertas
 
                 if (unId.Equals(2))
                 {
-                    logearCliente(this.UsuarioTB.Text, this.PassTB.Text);
+                    logearCliente(this.UsuarioTB.Text, this.PassTB.Text, unaSeleccion);
                 }
                 else if (unId.Equals(3))
                 {
-                    loguearProveedor(this.UsuarioTB.Text, this.PassTB.Text);
+                    loguearProveedor(this.UsuarioTB.Text, this.PassTB.Text, unaSeleccion);
                 }
                 else if (unId.Equals(1))
                 {
-                    loguearAdministrador(this.UsuarioTB.Text, this.PassTB.Text);
+                    loguearAdministrador(this.UsuarioTB.Text, this.PassTB.Text, unaSeleccion);
                 }
                 else
                 {
@@ -282,17 +285,22 @@ namespace FrbaOfertas
             if (RolRegCB.SelectedIndex > 0)
             {
                 String unaSeleccion = RolRegCB.Text;
+                int unId = idRol(unaSeleccion);
 
-                if (unaSeleccion.Equals("Cliente"))
+                if (unId.Equals(2))
                 {
                     AbmCliente.NuevoCliente nuevo = new AbmCliente.NuevoCliente();
                     nuevo.ShowDialog();
                     
                 }
-                else 
+                else if (unId.Equals(3))
                 {
                     AbmProveedor.NuevoProveedor nuevo = new AbmProveedor.NuevoProveedor();
                     nuevo.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Lo sentimos, aún no puedes acceder a esta funcionalidad...");
                 }
                 
             }
