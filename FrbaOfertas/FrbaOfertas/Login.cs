@@ -229,26 +229,41 @@ namespace FrbaOfertas
             UsuarioTB.Clear();
             PassTB.Clear();
         }
-       
 
+        public int idRol(String rol) {
+            string cadena = "select Rol_Id from LOS_BORBOTONES.Role ";
+            cadena += "where Rol_Nombre = @rol";
+            SqlCommand comandoCliente = new SqlCommand(cadena, conexion);
+            comandoCliente.Parameters.AddWithValue("@rol", rol);
+            SqlDataAdapter data = new SqlDataAdapter(comandoCliente);
+            DataTable tabla = new DataTable();
+            data.Fill(tabla);
+            int id = Convert.ToInt32(tabla.Rows[0][0].ToString());
+            return id;
+        }
         
 
         private void IngresarBtn_Click(object sender, EventArgs e)
         {
             if(RolCB.SelectedIndex > 0){
                 String unaSeleccion = RolCB.Text;
+                int unId = idRol(unaSeleccion);
 
-                if (unaSeleccion.Equals("Cliente"))
+                if (unId.Equals(2))
                 {
                     logearCliente(this.UsuarioTB.Text, this.PassTB.Text);
                 }
-                else if (unaSeleccion.Equals("Proveedor"))
+                else if (unId.Equals(3))
                 {
                     loguearProveedor(this.UsuarioTB.Text, this.PassTB.Text);
                 }
-                else
+                else if (unId.Equals(1))
                 {
                     loguearAdministrador(this.UsuarioTB.Text, this.PassTB.Text);
+                }
+                else
+                {
+                    MessageBox.Show("Lo sentimos, aún no puedes acceder a alguna funcionalidad...");
                 }
             }
             else
