@@ -48,10 +48,13 @@
             // 
             // ListadoDGV
             // 
+            this.ListadoDGV.AllowUserToAddRows = false;
+            this.ListadoDGV.AllowUserToDeleteRows = false;
             this.ListadoDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.ListadoDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ListadoDGV.Location = new System.Drawing.Point(12, 246);
             this.ListadoDGV.Name = "ListadoDGV";
+            this.ListadoDGV.ReadOnly = true;
             this.ListadoDGV.Size = new System.Drawing.Size(454, 220);
             this.ListadoDGV.TabIndex = 0;
             // 

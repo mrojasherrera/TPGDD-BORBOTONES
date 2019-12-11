@@ -31,8 +31,9 @@ namespace FrbaOfertas.Facturar
             String prov = ProvTB.Text;
             String cadena = "SELECT c.Oferta_Codigo 'Código de producto', count(c.Oferta_Codigo) 'Cantidad vendida', count(c.Oferta_Codigo)*o.Oferta_Precio 'Monto' ";
             cadena += "FROM LOS_BORBOTONES.Cupon c JOIN LOS_BORBOTONES.Oferta o ON (c.Oferta_Codigo = o.Oferta_Codigo) ";
-            cadena += "GROUP BY c.Oferta_Codigo, o.Oferta_Precio, o.Oferta_Fecha, o.Oferta_Fecha_Venc, o.Provee_CUIT ";
+            cadena += "GROUP BY c.Oferta_Codigo, o.Oferta_Precio, o.Oferta_Fecha, o.Oferta_Fecha_Venc, o.Provee_CUIT, c.Factura_Nro ";
             cadena += "HAVING cast(o.Oferta_Fecha as date) between cast('"+desde+"' as date) and Cast('"+hasta+"' as date) ";
+            cadena += "AND c.Factura_Nro is null ";
             cadena += "AND o.Provee_CUIT = '" + prov + "'";
             SqlCommand comando = new SqlCommand(cadena, conexion);
             SqlDataAdapter data = new SqlDataAdapter(comando);

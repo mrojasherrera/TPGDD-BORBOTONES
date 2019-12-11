@@ -57,6 +57,21 @@ namespace FrbaOfertas.ListadoEstadistico
                 ListadoDGV.DataSource = dataSet.Tables[0];
         }
 
+        public void listadoMayorFac(int mesD, int mesH, int fecha) {
+            String cadena = "select top 5 p.Provee_RS 'Razón social', f.Provee_CUIT 'CUIT', f.Factura_Nro 'Número de factura', f.Factura_Importe 'Importe' ";
+            cadena += "from LOS_BORBOTONES.Factura f join LOS_BORBOTONES.Proveedor p on (f.Provee_CUIT = p.Provee_CUIT) ";
+            cadena += "where year(Factura_Fecha) <= @aniofecha and MONTH(Factura_Fecha) between @mesD and @mesH ";
+            cadena += "order by f.Factura_Importe DESC";
+            SqlCommand comando = new SqlCommand(cadena, conexion);
+            comando.Parameters.AddWithValue("@aniofecha", fecha);
+            comando.Parameters.AddWithValue("@mesD", mesD);
+            comando.Parameters.AddWithValue("@mesH", mesH);
+            SqlDataAdapter data = new SqlDataAdapter(comando);
+            DataSet dataSet = new DataSet();
+            data.Fill(dataSet);
+            ListadoDGV.DataSource = dataSet.Tables[0];
+        }
+
         public void cargarListadoMayorPorc1s() {
             int fechaAnio = Convert.ToInt32(AnioCB.Text);
             conexion.Open();
@@ -117,12 +132,61 @@ namespace FrbaOfertas.ListadoEstadistico
         }
 
         public void cargarListadoMayorFac1s() {
-            DateTime fecha = fechaSistema();
+            int fechaAnio = Convert.ToInt32(AnioCB.Text);
+            conexion.Open();
+            DateTime fechaSist = fechaSistema();
+            if (fechaSist.Year.Equals(fechaAnio))
+            {
+                if (fechaSist.Month <= 6)
+                {
+                    int mes2 = Convert.ToInt32(fechaSist.Month);
+                    int mes1 = 1;
+                    listadoMayorFac(mes1, mes2, fechaAnio);
+                }
+                else
+                {
+                    int mes2 = 6;
+                    int mes1 = 1;
+                    listadoMayorFac(mes1, mes2, fechaAnio);
+                }
+            }
+            else
+            {
+                int mes2 = 6;
+                int mes1 = 1;
+                listadoMayorFac(mes1, mes2, fechaAnio);
+            }
+
+            conexion.Close();
             
         }
 
         public void cargarListadoMayorFac2s() {
-            DateTime fecha = fechaSistema();
+            int fechaAnio = Convert.ToInt32(AnioCB.Text);
+            conexion.Open();
+            DateTime fechaSist = fechaSistema();
+            if (fechaSist.Year.Equals(fechaAnio))
+            {
+                if (fechaSist.Month >= 7)
+                {
+                    int mes2 = Convert.ToInt32(fechaSist.Month);
+                    int mes1 = 7;
+                    listadoMayorFac(mes1, mes2, fechaAnio);
+                }
+                else
+                {
+                    int mes2 = 12;
+                    int mes1 = 7;
+                    listadoMayorFac(mes1, mes2, fechaAnio);
+                }
+            }
+            else
+            {
+                int mes2 = 12;
+                int mes1 = 7;
+                listadoMayorFac(mes1, mes2, fechaAnio);
+            }
+            conexion.Close();
             
         }
        
@@ -154,11 +218,13 @@ namespace FrbaOfertas.ListadoEstadistico
                     {
                         if (UnSemestreCB.SelectedIndex == 1)
                         {
-                            MessageBox.Show("elegí listar Proveedores con mayor facturación en el primer semestre del año");
+                            //MessageBox.Show("elegí listar Proveedores con mayor facturación en el primer semestre del año");
+                            cargarListadoMayorFac1s();
                         }
                         else
                         {
-                            MessageBox.Show("elegí listar Proveedores con mayor facturación en el segundor semestre del año");    
+                           // MessageBox.Show("elegí listar Proveedores con mayor facturación en el segundor semestre del año");
+                            cargarListadoMayorFac2s();
                         }
                           
                     }
