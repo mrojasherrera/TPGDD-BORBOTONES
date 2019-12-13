@@ -36,7 +36,6 @@ namespace FrbaOfertas.AbmCliente
             DireccionTB.Text = String.Empty;
             CiudadTB.Text = String.Empty;
             CodPostTB.Text = String.Empty;
-            //FechNacTB.Text = String.Empty;
         }
 
         public void generarRolUsuario(String usuario) {

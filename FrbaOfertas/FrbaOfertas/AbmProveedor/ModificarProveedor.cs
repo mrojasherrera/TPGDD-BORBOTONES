@@ -67,7 +67,7 @@ namespace FrbaOfertas.AbmProveedor
             cadena += "Provee_Rubro = @rubro,  ";
             cadena += "Provee_Mail = @mail, ";
             cadena += "Provee_Cod_postal = @codPost, ";
-            cadena += "Provee_Nombre_Contacto = @nombre";
+            cadena += "Provee_Nombre_Contacto = @nombre ";
             cadena += "WHERE Provee_CUIT = @cuit";
 
             SqlCommand comandoMod = new SqlCommand(cadena, conexion);
@@ -85,6 +85,7 @@ namespace FrbaOfertas.AbmProveedor
             if (cant == 1)
             {
                 MessageBox.Show("Se actualizo correctamente el proveedor...");
+                this.Close();
 
             }
             conexion.Close();

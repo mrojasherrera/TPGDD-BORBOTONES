@@ -91,10 +91,12 @@ namespace FrbaOfertas.AbmProveedor
 
         private void ModificarBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
             String proveedor = ProveeDGV.CurrentRow.Cells[1].Value.ToString();
             AbmProveedor.ModificarProveedor modificar = new ModificarProveedor(proveedor);
             modificar.ShowDialog();
+            BusquedaTB.Clear();
+            cargarDatos();
         }
     }
 }

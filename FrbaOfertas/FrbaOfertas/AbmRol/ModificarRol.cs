@@ -30,9 +30,7 @@ namespace FrbaOfertas.AbmRol
 
         private void VolverBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            AbmRol.FiltrarRol filtrar = new FiltrarRol();
-            filtrar.ShowDialog();
+            this.Close();
         }
 
         public void cargarFunc() {
@@ -120,7 +118,6 @@ namespace FrbaOfertas.AbmRol
                         dt.Rows.Add(new object[] { funcion1, funcion2 });
                         contador2 = 1;
                         idAgregar = Convert.ToInt32(funcion1);
-                        //MessageBox.Show(idAgregar.ToString());
                     }
                 }
             }
@@ -179,7 +176,6 @@ namespace FrbaOfertas.AbmRol
                 if (idAgregar>0)
                 {
                     agregarFunc(idAgregar, idRol);
-                    //MessageBox.Show(idAgregar.ToString()+", "+idRol);
                 }
                 if (idEliminar > 0)
                 {
@@ -188,9 +184,7 @@ namespace FrbaOfertas.AbmRol
             }
            
            MessageBox.Show("Se actualizaron los datos correctamente...");
-           this.Hide();
-           AbmRol.FiltrarRol filtrar = new FiltrarRol();
-           filtrar.ShowDialog();
+           this.Close();
         }
     }
 }

@@ -84,11 +84,12 @@ namespace FrbaOfertas.AbmCliente
         }
 
         private void ModificarTB_Click(object sender, EventArgs e)
-        {
-            this.Hide();
+        {            
             int dni = Convert.ToInt32(ClienteDGV.CurrentRow.Cells[2].Value.ToString());
             AbmCliente.ModificarCliente nuevo = new AbmCliente.ModificarCliente( dni);
             nuevo.ShowDialog();
+            BusquedaTB.Clear();
+            cargarDatos();
         }
 
         private void EliminarTB_Click(object sender, EventArgs e)

@@ -217,13 +217,11 @@ namespace FrbaOfertas.ListadoEstadistico
                     else
                     {
                         if (UnSemestreCB.SelectedIndex == 1)
-                        {
-                            //MessageBox.Show("elegí listar Proveedores con mayor facturación en el primer semestre del año");
+                        {                            
                             cargarListadoMayorFac1s();
                         }
                         else
                         {
-                           // MessageBox.Show("elegí listar Proveedores con mayor facturación en el segundor semestre del año");
                             cargarListadoMayorFac2s();
                         }
                           

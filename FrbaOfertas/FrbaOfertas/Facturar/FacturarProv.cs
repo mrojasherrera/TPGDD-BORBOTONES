@@ -85,6 +85,8 @@ namespace FrbaOfertas.Facturar
             DateTime hasta = HastaDTP.Value;
             Facturar.EmitirFac emitir = new Facturar.EmitirFac(dni, desde, hasta);
             emitir.ShowDialog();
+            BuscarProvTB.Clear();
+            cargarDatos();
 
         }
     }

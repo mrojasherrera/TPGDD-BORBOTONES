@@ -90,11 +90,13 @@ namespace FrbaOfertas.AbmRol
 
         private void ModificarBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
             int id = Convert.ToInt32(RolDGV.CurrentRow.Cells[0].Value.ToString());
             string nombreRol = RolDGV.CurrentRow.Cells[1].Value.ToString();
             AbmRol.ModificarRol nuevo = new ModificarRol(id, nombreRol);
             nuevo.ShowDialog();
+            RolTB.Clear();
+            cargarDatos();
         }
     }
 }

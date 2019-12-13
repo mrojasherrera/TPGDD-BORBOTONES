@@ -88,6 +88,7 @@ namespace FrbaOfertas.AbmCliente
             if (cant == 1)
             {
                 MessageBox.Show("Se actualizo correctamente el cliente...");
+                this.Close();
 
             }
             conexion.Close();
