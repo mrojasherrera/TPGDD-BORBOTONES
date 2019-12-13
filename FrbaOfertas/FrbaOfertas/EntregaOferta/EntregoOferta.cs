@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace FrbaOfertas.EntregaOferta
 {
-    public partial class EntregarOferta : Form
+    public partial class EntregoOferta : Form
     {
-        public EntregarOferta()
+        public EntregoOferta()
         {
             InitializeComponent();
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-            //probando...
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-            //probando
         }
     }
 }
