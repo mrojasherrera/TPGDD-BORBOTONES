@@ -97,7 +97,7 @@
             this.ModificarTB.Location = new System.Drawing.Point(506, 168);
             this.ModificarTB.Name = "ModificarTB";
             this.ModificarTB.Size = new System.Drawing.Size(131, 49);
-            this.ModificarTB.TabIndex = 3;
+            this.ModificarTB.TabIndex = 2;
             this.ModificarTB.Text = "Modificar Cliente";
             this.ModificarTB.UseVisualStyleBackColor = true;
             this.ModificarTB.Click += new System.EventHandler(this.ModificarTB_Click);
@@ -108,7 +108,7 @@
             this.EliminarTB.Location = new System.Drawing.Point(506, 243);
             this.EliminarTB.Name = "EliminarTB";
             this.EliminarTB.Size = new System.Drawing.Size(131, 49);
-            this.EliminarTB.TabIndex = 4;
+            this.EliminarTB.TabIndex = 3;
             this.EliminarTB.Text = "Eliminar Cliente";
             this.EliminarTB.UseVisualStyleBackColor = true;
             this.EliminarTB.Click += new System.EventHandler(this.EliminarTB_Click);
@@ -119,7 +119,7 @@
             this.VolverTB.Location = new System.Drawing.Point(506, 326);
             this.VolverTB.Name = "VolverTB";
             this.VolverTB.Size = new System.Drawing.Size(131, 49);
-            this.VolverTB.TabIndex = 5;
+            this.VolverTB.TabIndex = 4;
             this.VolverTB.Text = "Volver";
             this.VolverTB.UseVisualStyleBackColor = true;
             this.VolverTB.Click += new System.EventHandler(this.VolverTB_Click);

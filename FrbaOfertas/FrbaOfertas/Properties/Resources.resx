@@ -172,4 +172,7 @@
   <data name="_446813" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\446813.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="_69943" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\69943.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

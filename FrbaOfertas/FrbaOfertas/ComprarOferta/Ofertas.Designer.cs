@@ -55,7 +55,7 @@
             this.VolverBtn.Location = new System.Drawing.Point(1017, 116);
             this.VolverBtn.Name = "VolverBtn";
             this.VolverBtn.Size = new System.Drawing.Size(127, 52);
-            this.VolverBtn.TabIndex = 10;
+            this.VolverBtn.TabIndex = 6;
             this.VolverBtn.Text = "Volver";
             this.VolverBtn.UseVisualStyleBackColor = true;
             this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);
@@ -66,7 +66,7 @@
             this.ComprarBtn.Location = new System.Drawing.Point(1017, 33);
             this.ComprarBtn.Name = "ComprarBtn";
             this.ComprarBtn.Size = new System.Drawing.Size(127, 52);
-            this.ComprarBtn.TabIndex = 9;
+            this.ComprarBtn.TabIndex = 5;
             this.ComprarBtn.Text = "Comprar Oferta";
             this.ComprarBtn.UseVisualStyleBackColor = true;
             this.ComprarBtn.Click += new System.EventHandler(this.ComprarBtn_Click);
@@ -99,7 +99,7 @@
             this.BuscarTB.Location = new System.Drawing.Point(289, 19);
             this.BuscarTB.Name = "BuscarTB";
             this.BuscarTB.Size = new System.Drawing.Size(412, 20);
-            this.BuscarTB.TabIndex = 3;
+            this.BuscarTB.TabIndex = 2;
             this.BuscarTB.TextChanged += new System.EventHandler(this.BuscarTB_TextChanged);
             // 
             // CantNUD
@@ -107,7 +107,7 @@
             this.CantNUD.Location = new System.Drawing.Point(289, 56);
             this.CantNUD.Name = "CantNUD";
             this.CantNUD.Size = new System.Drawing.Size(120, 20);
-            this.CantNUD.TabIndex = 4;
+            this.CantNUD.TabIndex = 3;
             // 
             // label3
             // 
@@ -148,7 +148,7 @@
             this.DisponibleTB.Location = new System.Drawing.Point(526, 28);
             this.DisponibleTB.Name = "DisponibleTB";
             this.DisponibleTB.Size = new System.Drawing.Size(175, 20);
-            this.DisponibleTB.TabIndex = 2;
+            this.DisponibleTB.TabIndex = 1;
             // 
             // label4
             // 
@@ -186,7 +186,7 @@
             this.OfertaDGV.Location = new System.Drawing.Point(13, 184);
             this.OfertaDGV.Name = "OfertaDGV";
             this.OfertaDGV.Size = new System.Drawing.Size(1148, 315);
-            this.OfertaDGV.TabIndex = 12;
+            this.OfertaDGV.TabIndex = 4;
             // 
             // Ofertas
             // 

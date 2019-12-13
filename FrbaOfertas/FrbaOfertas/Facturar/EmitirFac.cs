@@ -22,12 +22,16 @@ namespace FrbaOfertas.Facturar
             cargarCupones(desde, hasta);
             DesdeDTP.Value = desde;
             HastaDTP.Value = hasta;
+            fechaDesde = desde;
+            fechaHasta = hasta;
         }
+
         String fecha_sistema = Properties.Settings.Default.fechaSistema;
         SqlConnection conexion = new SqlConnection("Data Source=localhost\\SQLSERVER2012;Initial Catalog=GD2C2019;Persist Security Info=True;User ID=gdCupon2019;Password=gd2019");
+        DateTime fechaDesde;
+        DateTime fechaHasta;
 
         public void cargarCupones(DateTime desde, DateTime hasta) {
-            //DateTime unaFecha = Convert.ToDateTime(fecha_sistema);
             String prov = ProvTB.Text;
             String cadena = "SELECT c.Oferta_Codigo 'Código de producto', count(c.Oferta_Codigo) 'Cantidad vendida', count(c.Oferta_Codigo)*o.Oferta_Precio 'Monto' ";
             cadena += "FROM LOS_BORBOTONES.Cupon c JOIN LOS_BORBOTONES.Oferta o ON (c.Oferta_Codigo = o.Oferta_Codigo) ";
@@ -57,6 +61,47 @@ namespace FrbaOfertas.Facturar
         private void VolverBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        public void actualizarCupon(String prov, DateTime desde, DateTime hasta, int nroFac) {
+            string cadena = "update LOS_BORBOTONES.Cupon ";
+            cadena += "set Factura_Nro = @fac ";
+            cadena += "where Cupon_Id in (select Cupon_Id from LOS_BORBOTONES.Oferta o join LOS_BORBOTONES.Cupon c on (o.Oferta_Codigo = c.Oferta_Codigo) ";
+            cadena += "where c.Factura_Nro is null and o.Provee_CUIT = @prov ";
+            cadena += "and cast(c.Oferta_Fecha_Compra as date) between cast(@desde as date) and cast(@hasta as date))";
+            SqlCommand comandoCupon = new SqlCommand(cadena, conexion);
+            comandoCupon.Parameters.AddWithValue("@fac", nroFac);
+            comandoCupon.Parameters.AddWithValue("@prov", prov);
+            comandoCupon.Parameters.AddWithValue("@desde", desde);
+            comandoCupon.Parameters.AddWithValue("@hasta", hasta);
+            int cant;
+            cant = comandoCupon.ExecuteNonQuery();
+            
+            MessageBox.Show("Factura generada con exito...");
+            this.Close();
+            
+        }
+
+        private void EmitirBtn_Click(object sender, EventArgs e)
+        {
+            conexion.Open();
+            DateTime fechaSist = Convert.ToDateTime(fecha_sistema);
+            string cadena = "insert into LOS_BORBOTONES.Factura ";
+            cadena += "(Factura_Fecha, Factura_Importe, Fecha_Desde, Fecha_Hasta, Provee_CUIT) ";
+            cadena += "values ";
+            cadena += "(@fecha, @monto, cast(@desde  as datetime), cast(@hasta as datetime), @prov) ";
+            cadena += "SELECT SCOPE_IDENTITY()";
+            SqlCommand comandoFac = new SqlCommand(cadena, conexion);
+            comandoFac.Parameters.AddWithValue("@fecha", fechaSist);
+            comandoFac.Parameters.AddWithValue("@monto", TotalTB.Text);
+            comandoFac.Parameters.AddWithValue("@desde", fechaDesde);
+            comandoFac.Parameters.AddWithValue("@hasta", fechaHasta);
+            comandoFac.Parameters.AddWithValue("@prov", ProvTB.Text);
+
+            int result = Convert.ToInt32(comandoFac.ExecuteScalar());
+            actualizarCupon(ProvTB.Text, fechaDesde, fechaHasta, result);
+
+            conexion.Close();
         }
 
     }

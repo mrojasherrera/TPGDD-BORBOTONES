@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.DniTB = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.TipoPagoCB = new System.Windows.Forms.ComboBox();
             this.MontoNUD = new System.Windows.Forms.NumericUpDown();
-            this.DatoTarjetaTB = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.DatoTarjetaTB = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CargarBtn = new System.Windows.Forms.Button();
             this.VolverBtn = new System.Windows.Forms.Button();
             this.ClientesDGV = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.DniTB = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MontoNUD)).BeginInit();
@@ -65,6 +65,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cargar crédito";
             // 
+            // DniTB
+            // 
+            this.DniTB.Location = new System.Drawing.Point(224, 112);
+            this.DniTB.Name = "DniTB";
+            this.DniTB.Size = new System.Drawing.Size(167, 20);
+            this.DniTB.TabIndex = 2;
+            this.DniTB.TextChanged += new System.EventHandler(this.DniTB_TextChanged);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -82,7 +90,7 @@
             this.TipoPagoCB.Location = new System.Drawing.Point(224, 33);
             this.TipoPagoCB.Name = "TipoPagoCB";
             this.TipoPagoCB.Size = new System.Drawing.Size(167, 21);
-            this.TipoPagoCB.TabIndex = 16;
+            this.TipoPagoCB.TabIndex = 0;
             this.TipoPagoCB.SelectedIndexChanged += new System.EventHandler(this.TipoPagoCB_SelectedIndexChanged);
             // 
             // MontoNUD
@@ -95,24 +103,7 @@
             0});
             this.MontoNUD.Name = "MontoNUD";
             this.MontoNUD.Size = new System.Drawing.Size(167, 20);
-            this.MontoNUD.TabIndex = 15;
-            // 
-            // DatoTarjetaTB
-            // 
-            this.DatoTarjetaTB.Location = new System.Drawing.Point(224, 29);
-            this.DatoTarjetaTB.Name = "DatoTarjetaTB";
-            this.DatoTarjetaTB.Size = new System.Drawing.Size(376, 20);
-            this.DatoTarjetaTB.TabIndex = 14;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(18, 29);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(187, 20);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "DATOS DE TARJETA:";
+            this.MontoNUD.TabIndex = 1;
             // 
             // label3
             // 
@@ -134,6 +125,23 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "TIPO DE PAGO:";
             // 
+            // DatoTarjetaTB
+            // 
+            this.DatoTarjetaTB.Location = new System.Drawing.Point(224, 29);
+            this.DatoTarjetaTB.Name = "DatoTarjetaTB";
+            this.DatoTarjetaTB.Size = new System.Drawing.Size(376, 20);
+            this.DatoTarjetaTB.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(18, 29);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(187, 20);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "DATOS DE TARJETA:";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::FrbaOfertas.Properties.Resources.images1;
@@ -150,7 +158,7 @@
             this.CargarBtn.Location = new System.Drawing.Point(509, 342);
             this.CargarBtn.Name = "CargarBtn";
             this.CargarBtn.Size = new System.Drawing.Size(104, 41);
-            this.CargarBtn.TabIndex = 10;
+            this.CargarBtn.TabIndex = 5;
             this.CargarBtn.Text = "Cargar Crédito";
             this.CargarBtn.UseVisualStyleBackColor = true;
             this.CargarBtn.Click += new System.EventHandler(this.CargarBtn_Click);
@@ -161,7 +169,7 @@
             this.VolverBtn.Location = new System.Drawing.Point(509, 429);
             this.VolverBtn.Name = "VolverBtn";
             this.VolverBtn.Size = new System.Drawing.Size(104, 41);
-            this.VolverBtn.TabIndex = 9;
+            this.VolverBtn.TabIndex = 6;
             this.VolverBtn.Text = "Volver";
             this.VolverBtn.UseVisualStyleBackColor = true;
             this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);
@@ -176,7 +184,7 @@
             this.ClientesDGV.Name = "ClientesDGV";
             this.ClientesDGV.ReadOnly = true;
             this.ClientesDGV.Size = new System.Drawing.Size(475, 259);
-            this.ClientesDGV.TabIndex = 11;
+            this.ClientesDGV.TabIndex = 4;
             // 
             // groupBox2
             // 
@@ -188,14 +196,6 @@
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos";
-            // 
-            // DniTB
-            // 
-            this.DniTB.Location = new System.Drawing.Point(224, 112);
-            this.DniTB.Name = "DniTB";
-            this.DniTB.Size = new System.Drawing.Size(167, 20);
-            this.DniTB.TabIndex = 18;
-            this.DniTB.TextChanged += new System.EventHandler(this.DniTB_TextChanged);
             // 
             // label1
             // 

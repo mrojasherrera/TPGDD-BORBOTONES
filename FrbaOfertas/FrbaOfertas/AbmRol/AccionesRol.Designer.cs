@@ -89,7 +89,7 @@
             this.SalirBtn.Location = new System.Drawing.Point(414, 265);
             this.SalirBtn.Name = "SalirBtn";
             this.SalirBtn.Size = new System.Drawing.Size(123, 50);
-            this.SalirBtn.TabIndex = 1;
+            this.SalirBtn.TabIndex = 3;
             this.SalirBtn.Text = "Volver";
             this.SalirBtn.UseVisualStyleBackColor = true;
             this.SalirBtn.Click += new System.EventHandler(this.SalirBtn_Click);

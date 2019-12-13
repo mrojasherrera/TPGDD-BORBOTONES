@@ -37,11 +37,11 @@
             this.MisFuncDGV = new System.Windows.Forms.DataGridView();
             this.FuncDGV = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.IdTB = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.RolTB = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.IdTB = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.MisFuncDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FuncDGV)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -73,7 +73,7 @@
             this.GuardarBtn.Location = new System.Drawing.Point(433, 446);
             this.GuardarBtn.Name = "GuardarBtn";
             this.GuardarBtn.Size = new System.Drawing.Size(101, 45);
-            this.GuardarBtn.TabIndex = 15;
+            this.GuardarBtn.TabIndex = 4;
             this.GuardarBtn.Text = "Guardar";
             this.GuardarBtn.UseVisualStyleBackColor = true;
             this.GuardarBtn.Click += new System.EventHandler(this.GuardarBtn_Click);
@@ -83,7 +83,7 @@
             this.VolverBtn.Location = new System.Drawing.Point(208, 446);
             this.VolverBtn.Name = "VolverBtn";
             this.VolverBtn.Size = new System.Drawing.Size(101, 45);
-            this.VolverBtn.TabIndex = 14;
+            this.VolverBtn.TabIndex = 5;
             this.VolverBtn.Text = "Volver";
             this.VolverBtn.UseVisualStyleBackColor = true;
             this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);
@@ -93,7 +93,7 @@
             this.EliminarBtn.Location = new System.Drawing.Point(315, 333);
             this.EliminarBtn.Name = "EliminarBtn";
             this.EliminarBtn.Size = new System.Drawing.Size(112, 51);
-            this.EliminarBtn.TabIndex = 13;
+            this.EliminarBtn.TabIndex = 3;
             this.EliminarBtn.Text = "<< Eliminar";
             this.EliminarBtn.UseVisualStyleBackColor = true;
             this.EliminarBtn.Click += new System.EventHandler(this.EliminarBtn_Click);
@@ -103,7 +103,7 @@
             this.AgregarBtn.Location = new System.Drawing.Point(315, 251);
             this.AgregarBtn.Name = "AgregarBtn";
             this.AgregarBtn.Size = new System.Drawing.Size(112, 51);
-            this.AgregarBtn.TabIndex = 12;
+            this.AgregarBtn.TabIndex = 2;
             this.AgregarBtn.Text = "Agregar >>";
             this.AgregarBtn.UseVisualStyleBackColor = true;
             this.AgregarBtn.Click += new System.EventHandler(this.AgregarBtn_Click);
@@ -118,7 +118,7 @@
             this.MisFuncDGV.Name = "MisFuncDGV";
             this.MisFuncDGV.ReadOnly = true;
             this.MisFuncDGV.Size = new System.Drawing.Size(273, 203);
-            this.MisFuncDGV.TabIndex = 11;
+            this.MisFuncDGV.TabIndex = 7;
             // 
             // FuncDGV
             // 
@@ -130,7 +130,7 @@
             this.FuncDGV.Name = "FuncDGV";
             this.FuncDGV.ReadOnly = true;
             this.FuncDGV.Size = new System.Drawing.Size(297, 203);
-            this.FuncDGV.TabIndex = 10;
+            this.FuncDGV.TabIndex = 6;
             // 
             // groupBox1
             // 
@@ -144,6 +144,24 @@
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Rol";
+            // 
+            // IdTB
+            // 
+            this.IdTB.Enabled = false;
+            this.IdTB.Location = new System.Drawing.Point(138, 53);
+            this.IdTB.Name = "IdTB";
+            this.IdTB.Size = new System.Drawing.Size(100, 20);
+            this.IdTB.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(51, 53);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(33, 20);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "ID:";
             // 
             // RolTB
             // 
@@ -171,24 +189,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(51, 53);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 20);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "ID:";
-            // 
-            // IdTB
-            // 
-            this.IdTB.Enabled = false;
-            this.IdTB.Location = new System.Drawing.Point(138, 53);
-            this.IdTB.Name = "IdTB";
-            this.IdTB.Size = new System.Drawing.Size(100, 20);
-            this.IdTB.TabIndex = 2;
             // 
             // ModificarRol
             // 

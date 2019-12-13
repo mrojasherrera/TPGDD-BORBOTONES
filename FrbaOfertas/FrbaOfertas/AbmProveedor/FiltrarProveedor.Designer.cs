@@ -87,7 +87,7 @@
             this.ModificarBtn.Location = new System.Drawing.Point(502, 194);
             this.ModificarBtn.Name = "ModificarBtn";
             this.ModificarBtn.Size = new System.Drawing.Size(145, 55);
-            this.ModificarBtn.TabIndex = 10;
+            this.ModificarBtn.TabIndex = 2;
             this.ModificarBtn.Text = "Modificar Proveedor";
             this.ModificarBtn.UseVisualStyleBackColor = true;
             this.ModificarBtn.Click += new System.EventHandler(this.ModificarBtn_Click);
@@ -98,7 +98,7 @@
             this.VolverBtn.Location = new System.Drawing.Point(502, 366);
             this.VolverBtn.Name = "VolverBtn";
             this.VolverBtn.Size = new System.Drawing.Size(145, 55);
-            this.VolverBtn.TabIndex = 9;
+            this.VolverBtn.TabIndex = 4;
             this.VolverBtn.Text = "Volver";
             this.VolverBtn.UseVisualStyleBackColor = true;
             this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);
@@ -120,7 +120,7 @@
             this.EliminarBtn.Location = new System.Drawing.Point(502, 278);
             this.EliminarBtn.Name = "EliminarBtn";
             this.EliminarBtn.Size = new System.Drawing.Size(145, 55);
-            this.EliminarBtn.TabIndex = 11;
+            this.EliminarBtn.TabIndex = 3;
             this.EliminarBtn.Text = "Eliminar Proveedor";
             this.EliminarBtn.UseVisualStyleBackColor = true;
             this.EliminarBtn.Click += new System.EventHandler(this.EliminarBtn_Click);

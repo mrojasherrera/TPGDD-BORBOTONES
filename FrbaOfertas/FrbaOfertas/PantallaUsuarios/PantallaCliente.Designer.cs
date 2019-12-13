@@ -64,7 +64,7 @@
             this.ApellidoTB.Location = new System.Drawing.Point(145, 121);
             this.ApellidoTB.Name = "ApellidoTB";
             this.ApellidoTB.Size = new System.Drawing.Size(151, 20);
-            this.ApellidoTB.TabIndex = 8;
+            this.ApellidoTB.TabIndex = 2;
             // 
             // NombreTB
             // 
@@ -72,7 +72,7 @@
             this.NombreTB.Location = new System.Drawing.Point(145, 85);
             this.NombreTB.Name = "NombreTB";
             this.NombreTB.Size = new System.Drawing.Size(151, 20);
-            this.NombreTB.TabIndex = 7;
+            this.NombreTB.TabIndex = 1;
             // 
             // UsuarioTB
             // 
@@ -80,7 +80,7 @@
             this.UsuarioTB.Location = new System.Drawing.Point(145, 47);
             this.UsuarioTB.Name = "UsuarioTB";
             this.UsuarioTB.Size = new System.Drawing.Size(151, 20);
-            this.UsuarioTB.TabIndex = 6;
+            this.UsuarioTB.TabIndex = 0;
             // 
             // label4
             // 
@@ -118,7 +118,7 @@
             this.ComprarBtn.Location = new System.Drawing.Point(28, 33);
             this.ComprarBtn.Name = "ComprarBtn";
             this.ComprarBtn.Size = new System.Drawing.Size(141, 53);
-            this.ComprarBtn.TabIndex = 6;
+            this.ComprarBtn.TabIndex = 3;
             this.ComprarBtn.Text = "Comprar Oferta";
             this.ComprarBtn.UseVisualStyleBackColor = true;
             this.ComprarBtn.Click += new System.EventHandler(this.ComprarBtn_Click);
@@ -130,7 +130,7 @@
             this.SalirBtn.Location = new System.Drawing.Point(157, 207);
             this.SalirBtn.Name = "SalirBtn";
             this.SalirBtn.Size = new System.Drawing.Size(112, 49);
-            this.SalirBtn.TabIndex = 7;
+            this.SalirBtn.TabIndex = 5;
             this.SalirBtn.Text = "Salir";
             this.SalirBtn.UseVisualStyleBackColor = false;
             this.SalirBtn.Click += new System.EventHandler(this.SalirBtn_Click);
@@ -152,7 +152,7 @@
             this.CambiarBtn.Location = new System.Drawing.Point(28, 110);
             this.CambiarBtn.Name = "CambiarBtn";
             this.CambiarBtn.Size = new System.Drawing.Size(141, 53);
-            this.CambiarBtn.TabIndex = 7;
+            this.CambiarBtn.TabIndex = 4;
             this.CambiarBtn.Text = "Cambiar Contraseña";
             this.CambiarBtn.UseVisualStyleBackColor = true;
             this.CambiarBtn.Click += new System.EventHandler(this.CambiarBtn_Click);

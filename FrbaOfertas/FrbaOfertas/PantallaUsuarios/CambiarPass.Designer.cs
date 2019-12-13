@@ -59,7 +59,7 @@
             this.UsuarioTB.Location = new System.Drawing.Point(88, 56);
             this.UsuarioTB.Name = "UsuarioTB";
             this.UsuarioTB.Size = new System.Drawing.Size(160, 20);
-            this.UsuarioTB.TabIndex = 1;
+            this.UsuarioTB.TabIndex = 0;
             this.UsuarioTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
@@ -89,7 +89,7 @@
             this.PassTB.Name = "PassTB";
             this.PassTB.PasswordChar = '*';
             this.PassTB.Size = new System.Drawing.Size(160, 20);
-            this.PassTB.TabIndex = 1;
+            this.PassTB.TabIndex = 2;
             this.PassTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
@@ -108,7 +108,7 @@
             this.CambiarBtn.Location = new System.Drawing.Point(77, 263);
             this.CambiarBtn.Name = "CambiarBtn";
             this.CambiarBtn.Size = new System.Drawing.Size(90, 37);
-            this.CambiarBtn.TabIndex = 2;
+            this.CambiarBtn.TabIndex = 3;
             this.CambiarBtn.Text = "Cambiar";
             this.CambiarBtn.UseVisualStyleBackColor = true;
             this.CambiarBtn.Click += new System.EventHandler(this.CambiarBtn_Click);
@@ -119,7 +119,7 @@
             this.VolverBtn.Location = new System.Drawing.Point(242, 263);
             this.VolverBtn.Name = "VolverBtn";
             this.VolverBtn.Size = new System.Drawing.Size(90, 37);
-            this.VolverBtn.TabIndex = 3;
+            this.VolverBtn.TabIndex = 4;
             this.VolverBtn.Text = "Volver";
             this.VolverBtn.UseVisualStyleBackColor = true;
             this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);

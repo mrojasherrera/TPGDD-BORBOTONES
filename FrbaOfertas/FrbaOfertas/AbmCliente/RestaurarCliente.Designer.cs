@@ -83,7 +83,7 @@
             this.ApellidoTB.Location = new System.Drawing.Point(161, 103);
             this.ApellidoTB.Name = "ApellidoTB";
             this.ApellidoTB.Size = new System.Drawing.Size(177, 20);
-            this.ApellidoTB.TabIndex = 53;
+            this.ApellidoTB.TabIndex = 2;
             // 
             // NombreTB
             // 
@@ -91,7 +91,7 @@
             this.NombreTB.Location = new System.Drawing.Point(161, 67);
             this.NombreTB.Name = "NombreTB";
             this.NombreTB.Size = new System.Drawing.Size(177, 20);
-            this.NombreTB.TabIndex = 52;
+            this.NombreTB.TabIndex = 1;
             // 
             // CliBorradoCB
             // 
@@ -99,7 +99,7 @@
             this.CliBorradoCB.Location = new System.Drawing.Point(161, 33);
             this.CliBorradoCB.Name = "CliBorradoCB";
             this.CliBorradoCB.Size = new System.Drawing.Size(177, 21);
-            this.CliBorradoCB.TabIndex = 1;
+            this.CliBorradoCB.TabIndex = 0;
             this.CliBorradoCB.SelectedIndexChanged += new System.EventHandler(this.CliBorradoCB_SelectedIndexChanged);
             // 
             // label1
@@ -127,7 +127,7 @@
             this.RestaurarBtn.Location = new System.Drawing.Point(262, 175);
             this.RestaurarBtn.Name = "RestaurarBtn";
             this.RestaurarBtn.Size = new System.Drawing.Size(89, 32);
-            this.RestaurarBtn.TabIndex = 2;
+            this.RestaurarBtn.TabIndex = 3;
             this.RestaurarBtn.Text = "Restaurar";
             this.RestaurarBtn.UseVisualStyleBackColor = true;
             this.RestaurarBtn.Click += new System.EventHandler(this.RestaurarBtn_Click);
@@ -137,7 +137,7 @@
             this.VolverBtn.Location = new System.Drawing.Point(118, 175);
             this.VolverBtn.Name = "VolverBtn";
             this.VolverBtn.Size = new System.Drawing.Size(89, 32);
-            this.VolverBtn.TabIndex = 3;
+            this.VolverBtn.TabIndex = 4;
             this.VolverBtn.Text = "Volver";
             this.VolverBtn.UseVisualStyleBackColor = true;
             this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);

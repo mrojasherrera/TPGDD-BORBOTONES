@@ -52,7 +52,7 @@
             this.SalirBtn.Location = new System.Drawing.Point(257, 331);
             this.SalirBtn.Name = "SalirBtn";
             this.SalirBtn.Size = new System.Drawing.Size(135, 49);
-            this.SalirBtn.TabIndex = 15;
+            this.SalirBtn.TabIndex = 7;
             this.SalirBtn.Text = "Salir";
             this.SalirBtn.UseVisualStyleBackColor = false;
             this.SalirBtn.Click += new System.EventHandler(this.SalirBtn_Click);
@@ -78,7 +78,7 @@
             this.ClienteBtn.Location = new System.Drawing.Point(23, 37);
             this.ClienteBtn.Name = "ClienteBtn";
             this.ClienteBtn.Size = new System.Drawing.Size(135, 56);
-            this.ClienteBtn.TabIndex = 7;
+            this.ClienteBtn.TabIndex = 1;
             this.ClienteBtn.Text = "ABM Cliente";
             this.ClienteBtn.UseVisualStyleBackColor = true;
             this.ClienteBtn.Click += new System.EventHandler(this.ClienteBtn_Click);
@@ -89,7 +89,7 @@
             this.EstadisticoBtn.Location = new System.Drawing.Point(245, 121);
             this.EstadisticoBtn.Name = "EstadisticoBtn";
             this.EstadisticoBtn.Size = new System.Drawing.Size(135, 56);
-            this.EstadisticoBtn.TabIndex = 12;
+            this.EstadisticoBtn.TabIndex = 5;
             this.EstadisticoBtn.Text = "Listado Estadístico";
             this.EstadisticoBtn.UseVisualStyleBackColor = true;
             this.EstadisticoBtn.Click += new System.EventHandler(this.EstadisticoBtn_Click);
@@ -100,7 +100,7 @@
             this.ProveedorBtn.Location = new System.Drawing.Point(245, 37);
             this.ProveedorBtn.Name = "ProveedorBtn";
             this.ProveedorBtn.Size = new System.Drawing.Size(135, 56);
-            this.ProveedorBtn.TabIndex = 8;
+            this.ProveedorBtn.TabIndex = 2;
             this.ProveedorBtn.Text = "ABM Proveedor";
             this.ProveedorBtn.UseVisualStyleBackColor = true;
             this.ProveedorBtn.Click += new System.EventHandler(this.ProveedorBtn_Click);
@@ -111,7 +111,7 @@
             this.FacturarBtn.Location = new System.Drawing.Point(439, 121);
             this.FacturarBtn.Name = "FacturarBtn";
             this.FacturarBtn.Size = new System.Drawing.Size(135, 56);
-            this.FacturarBtn.TabIndex = 11;
+            this.FacturarBtn.TabIndex = 6;
             this.FacturarBtn.Text = "Facturar Proveedor";
             this.FacturarBtn.UseVisualStyleBackColor = true;
             this.FacturarBtn.Click += new System.EventHandler(this.FacturarBtn_Click);
@@ -122,7 +122,7 @@
             this.RolBtn.Location = new System.Drawing.Point(439, 37);
             this.RolBtn.Name = "RolBtn";
             this.RolBtn.Size = new System.Drawing.Size(135, 56);
-            this.RolBtn.TabIndex = 9;
+            this.RolBtn.TabIndex = 3;
             this.RolBtn.Text = "ABM Rol";
             this.RolBtn.UseVisualStyleBackColor = true;
             this.RolBtn.Click += new System.EventHandler(this.RolBtn_Click);
@@ -133,7 +133,7 @@
             this.CreditoBtn.Location = new System.Drawing.Point(23, 121);
             this.CreditoBtn.Name = "CreditoBtn";
             this.CreditoBtn.Size = new System.Drawing.Size(135, 56);
-            this.CreditoBtn.TabIndex = 10;
+            this.CreditoBtn.TabIndex = 4;
             this.CreditoBtn.Text = "Cargar Crédito";
             this.CreditoBtn.UseVisualStyleBackColor = true;
             this.CreditoBtn.Click += new System.EventHandler(this.CreditoBtn_Click);
@@ -155,7 +155,7 @@
             this.AdmTB.Location = new System.Drawing.Point(188, 40);
             this.AdmTB.Name = "AdmTB";
             this.AdmTB.Size = new System.Drawing.Size(180, 20);
-            this.AdmTB.TabIndex = 3;
+            this.AdmTB.TabIndex = 0;
             // 
             // label1
             // 

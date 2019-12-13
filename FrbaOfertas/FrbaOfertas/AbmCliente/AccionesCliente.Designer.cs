@@ -55,7 +55,7 @@
             this.RestaurarBtn.Location = new System.Drawing.Point(66, 173);
             this.RestaurarBtn.Name = "RestaurarBtn";
             this.RestaurarBtn.Size = new System.Drawing.Size(140, 44);
-            this.RestaurarBtn.TabIndex = 3;
+            this.RestaurarBtn.TabIndex = 2;
             this.RestaurarBtn.Text = "Restaurar Cliente";
             this.RestaurarBtn.UseVisualStyleBackColor = true;
             this.RestaurarBtn.Click += new System.EventHandler(this.RestaurarBtn_Click);
@@ -65,7 +65,7 @@
             this.NuevoBtn.Location = new System.Drawing.Point(66, 28);
             this.NuevoBtn.Name = "NuevoBtn";
             this.NuevoBtn.Size = new System.Drawing.Size(140, 44);
-            this.NuevoBtn.TabIndex = 1;
+            this.NuevoBtn.TabIndex = 0;
             this.NuevoBtn.Text = "Nuevo Cliente";
             this.NuevoBtn.UseVisualStyleBackColor = true;
             this.NuevoBtn.Click += new System.EventHandler(this.NuevoBtn_Click);
@@ -75,7 +75,7 @@
             this.FiltrarBtn.Location = new System.Drawing.Point(66, 98);
             this.FiltrarBtn.Name = "FiltrarBtn";
             this.FiltrarBtn.Size = new System.Drawing.Size(140, 44);
-            this.FiltrarBtn.TabIndex = 2;
+            this.FiltrarBtn.TabIndex = 1;
             this.FiltrarBtn.Text = "Buscar Cliente";
             this.FiltrarBtn.UseVisualStyleBackColor = true;
             this.FiltrarBtn.Click += new System.EventHandler(this.FiltrarBtn_Click);
@@ -87,7 +87,7 @@
             this.button1.Location = new System.Drawing.Point(281, 185);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(140, 44);
-            this.button1.TabIndex = 7;
+            this.button1.TabIndex = 3;
             this.button1.Text = "Salir";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);

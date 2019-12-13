@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.ProvTB = new System.Windows.Forms.TextBox();
-            this.CuponesDGV = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.DesdeDTP = new System.Windows.Forms.DateTimePicker();
             this.HastaDTP = new System.Windows.Forms.DateTimePicker();
+            this.DesdeDTP = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.ProvTB = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.CuponesDGV = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.EmitirBtn = new System.Windows.Forms.Button();
             this.VolverBtn = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.TotalTB = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CuponesDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -63,43 +63,25 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Proveedor";
             // 
-            // label1
+            // HastaDTP
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(46, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "PROVEEDOR:";
+            this.HastaDTP.CustomFormat = "yyyy/MM/dd";
+            this.HastaDTP.Enabled = false;
+            this.HastaDTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.HastaDTP.Location = new System.Drawing.Point(292, 80);
+            this.HastaDTP.Name = "HastaDTP";
+            this.HastaDTP.Size = new System.Drawing.Size(112, 20);
+            this.HastaDTP.TabIndex = 2;
             // 
-            // ProvTB
+            // DesdeDTP
             // 
-            this.ProvTB.Enabled = false;
-            this.ProvTB.Location = new System.Drawing.Point(209, 32);
-            this.ProvTB.Name = "ProvTB";
-            this.ProvTB.Size = new System.Drawing.Size(167, 20);
-            this.ProvTB.TabIndex = 1;
-            // 
-            // CuponesDGV
-            // 
-            this.CuponesDGV.AllowUserToAddRows = false;
-            this.CuponesDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.CuponesDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.CuponesDGV.Location = new System.Drawing.Point(13, 139);
-            this.CuponesDGV.Name = "CuponesDGV";
-            this.CuponesDGV.Size = new System.Drawing.Size(380, 349);
-            this.CuponesDGV.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 81);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "DESDE:";
+            this.DesdeDTP.CustomFormat = "yyyy/MM/dd";
+            this.DesdeDTP.Enabled = false;
+            this.DesdeDTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DesdeDTP.Location = new System.Drawing.Point(88, 82);
+            this.DesdeDTP.Name = "DesdeDTP";
+            this.DesdeDTP.Size = new System.Drawing.Size(108, 20);
+            this.DesdeDTP.TabIndex = 1;
             // 
             // label3
             // 
@@ -111,25 +93,43 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "HASTA:";
             // 
-            // DesdeDTP
+            // label2
             // 
-            this.DesdeDTP.CustomFormat = "yyyy/MM/dd";
-            this.DesdeDTP.Enabled = false;
-            this.DesdeDTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DesdeDTP.Location = new System.Drawing.Point(88, 82);
-            this.DesdeDTP.Name = "DesdeDTP";
-            this.DesdeDTP.Size = new System.Drawing.Size(108, 20);
-            this.DesdeDTP.TabIndex = 4;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 81);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "DESDE:";
             // 
-            // HastaDTP
+            // ProvTB
             // 
-            this.HastaDTP.CustomFormat = "yyyy/MM/dd";
-            this.HastaDTP.Enabled = false;
-            this.HastaDTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.HastaDTP.Location = new System.Drawing.Point(292, 80);
-            this.HastaDTP.Name = "HastaDTP";
-            this.HastaDTP.Size = new System.Drawing.Size(112, 20);
-            this.HastaDTP.TabIndex = 5;
+            this.ProvTB.Enabled = false;
+            this.ProvTB.Location = new System.Drawing.Point(209, 32);
+            this.ProvTB.Name = "ProvTB";
+            this.ProvTB.Size = new System.Drawing.Size(167, 20);
+            this.ProvTB.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(46, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(126, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "PROVEEDOR:";
+            // 
+            // CuponesDGV
+            // 
+            this.CuponesDGV.AllowUserToAddRows = false;
+            this.CuponesDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.CuponesDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CuponesDGV.Location = new System.Drawing.Point(13, 139);
+            this.CuponesDGV.Name = "CuponesDGV";
+            this.CuponesDGV.Size = new System.Drawing.Size(380, 349);
+            this.CuponesDGV.TabIndex = 3;
             // 
             // pictureBox1
             // 
@@ -144,21 +144,22 @@
             // EmitirBtn
             // 
             this.EmitirBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmitirBtn.Location = new System.Drawing.Point(461, 332);
+            this.EmitirBtn.Location = new System.Drawing.Point(461, 319);
             this.EmitirBtn.Name = "EmitirBtn";
             this.EmitirBtn.Size = new System.Drawing.Size(127, 55);
-            this.EmitirBtn.TabIndex = 3;
+            this.EmitirBtn.TabIndex = 5;
             this.EmitirBtn.Text = "Emitir Factura";
             this.EmitirBtn.UseVisualStyleBackColor = true;
+            this.EmitirBtn.Click += new System.EventHandler(this.EmitirBtn_Click);
             // 
             // VolverBtn
             // 
             this.VolverBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VolverBtn.Location = new System.Drawing.Point(461, 433);
+            this.VolverBtn.Location = new System.Drawing.Point(461, 403);
             this.VolverBtn.Name = "VolverBtn";
             this.VolverBtn.Size = new System.Drawing.Size(127, 55);
-            this.VolverBtn.TabIndex = 4;
-            this.VolverBtn.Text = "volver";
+            this.VolverBtn.TabIndex = 6;
+            this.VolverBtn.Text = "Volver";
             this.VolverBtn.UseVisualStyleBackColor = true;
             this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);
             // 
@@ -173,6 +174,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Monto Total";
             // 
+            // TotalTB
+            // 
+            this.TotalTB.Enabled = false;
+            this.TotalTB.Location = new System.Drawing.Point(61, 82);
+            this.TotalTB.Name = "TotalTB";
+            this.TotalTB.Size = new System.Drawing.Size(127, 20);
+            this.TotalTB.TabIndex = 4;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -183,19 +192,11 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "TOTAL";
             // 
-            // TotalTB
-            // 
-            this.TotalTB.Enabled = false;
-            this.TotalTB.Location = new System.Drawing.Point(61, 82);
-            this.TotalTB.Name = "TotalTB";
-            this.TotalTB.Size = new System.Drawing.Size(127, 20);
-            this.TotalTB.TabIndex = 1;
-            // 
             // EmitirFac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(656, 518);
+            this.ClientSize = new System.Drawing.Size(656, 498);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.VolverBtn);
             this.Controls.Add(this.EmitirBtn);

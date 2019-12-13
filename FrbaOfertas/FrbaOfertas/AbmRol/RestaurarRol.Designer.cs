@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.RolTB = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.RestaurarBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.RolesDGV = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.RolTB = new System.Windows.Forms.TextBox();
             this.VolverBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -52,6 +52,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Restaurar rol";
             // 
+            // RolTB
+            // 
+            this.RolTB.Location = new System.Drawing.Point(86, 38);
+            this.RolTB.Name = "RolTB";
+            this.RolTB.Size = new System.Drawing.Size(171, 20);
+            this.RolTB.TabIndex = 0;
+            this.RolTB.TextChanged += new System.EventHandler(this.RolTB_TextChanged);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -68,7 +76,7 @@
             this.RestaurarBtn.Location = new System.Drawing.Point(345, 230);
             this.RestaurarBtn.Name = "RestaurarBtn";
             this.RestaurarBtn.Size = new System.Drawing.Size(121, 38);
-            this.RestaurarBtn.TabIndex = 1;
+            this.RestaurarBtn.TabIndex = 2;
             this.RestaurarBtn.Text = "Restaurar";
             this.RestaurarBtn.UseVisualStyleBackColor = true;
             this.RestaurarBtn.Click += new System.EventHandler(this.RestaurarBtn_Click);
@@ -93,7 +101,7 @@
             this.RolesDGV.Name = "RolesDGV";
             this.RolesDGV.ReadOnly = true;
             this.RolesDGV.Size = new System.Drawing.Size(290, 220);
-            this.RolesDGV.TabIndex = 3;
+            this.RolesDGV.TabIndex = 1;
             // 
             // label2
             // 
@@ -105,21 +113,13 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Elegir un rol";
             // 
-            // RolTB
-            // 
-            this.RolTB.Location = new System.Drawing.Point(86, 38);
-            this.RolTB.Name = "RolTB";
-            this.RolTB.Size = new System.Drawing.Size(171, 20);
-            this.RolTB.TabIndex = 1;
-            this.RolTB.TextChanged += new System.EventHandler(this.RolTB_TextChanged);
-            // 
             // VolverBtn
             // 
             this.VolverBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VolverBtn.Location = new System.Drawing.Point(345, 304);
             this.VolverBtn.Name = "VolverBtn";
             this.VolverBtn.Size = new System.Drawing.Size(121, 38);
-            this.VolverBtn.TabIndex = 5;
+            this.VolverBtn.TabIndex = 3;
             this.VolverBtn.Text = "Volver";
             this.VolverBtn.UseVisualStyleBackColor = true;
             this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);

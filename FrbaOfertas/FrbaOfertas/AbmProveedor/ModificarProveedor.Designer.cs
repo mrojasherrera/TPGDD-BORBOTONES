@@ -246,7 +246,7 @@
             // 
             // ModificarBtn
             // 
-            this.ModificarBtn.Location = new System.Drawing.Point(693, 274);
+            this.ModificarBtn.Location = new System.Drawing.Point(569, 274);
             this.ModificarBtn.Name = "ModificarBtn";
             this.ModificarBtn.Size = new System.Drawing.Size(105, 43);
             this.ModificarBtn.TabIndex = 9;
@@ -256,7 +256,7 @@
             // 
             // VolverBtn
             // 
-            this.VolverBtn.Location = new System.Drawing.Point(563, 274);
+            this.VolverBtn.Location = new System.Drawing.Point(693, 274);
             this.VolverBtn.Name = "VolverBtn";
             this.VolverBtn.Size = new System.Drawing.Size(105, 43);
             this.VolverBtn.TabIndex = 10;

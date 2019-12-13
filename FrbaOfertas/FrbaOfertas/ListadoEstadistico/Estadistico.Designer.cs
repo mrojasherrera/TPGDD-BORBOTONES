@@ -56,7 +56,7 @@
             this.ListadoDGV.Name = "ListadoDGV";
             this.ListadoDGV.ReadOnly = true;
             this.ListadoDGV.Size = new System.Drawing.Size(454, 220);
-            this.ListadoDGV.TabIndex = 0;
+            this.ListadoDGV.TabIndex = 3;
             // 
             // groupBox1
             // 
@@ -79,7 +79,7 @@
             this.ListarCB.Location = new System.Drawing.Point(103, 42);
             this.ListarCB.Name = "ListarCB";
             this.ListarCB.Size = new System.Drawing.Size(344, 21);
-            this.ListarCB.TabIndex = 1;
+            this.ListarCB.TabIndex = 0;
             // 
             // label1
             // 
@@ -111,7 +111,7 @@
             this.AnioCB.Location = new System.Drawing.Point(327, 28);
             this.AnioCB.Name = "AnioCB";
             this.AnioCB.Size = new System.Drawing.Size(121, 21);
-            this.AnioCB.TabIndex = 3;
+            this.AnioCB.TabIndex = 1;
             // 
             // label3
             // 
@@ -133,7 +133,7 @@
             this.UnSemestreCB.Location = new System.Drawing.Point(167, 60);
             this.UnSemestreCB.Name = "UnSemestreCB";
             this.UnSemestreCB.Size = new System.Drawing.Size(281, 21);
-            this.UnSemestreCB.TabIndex = 1;
+            this.UnSemestreCB.TabIndex = 2;
             // 
             // label2
             // 
@@ -161,7 +161,7 @@
             this.VolverBtn.Location = new System.Drawing.Point(530, 377);
             this.VolverBtn.Name = "VolverBtn";
             this.VolverBtn.Size = new System.Drawing.Size(129, 55);
-            this.VolverBtn.TabIndex = 4;
+            this.VolverBtn.TabIndex = 5;
             this.VolverBtn.Text = "Volver";
             this.VolverBtn.UseVisualStyleBackColor = true;
             this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);
@@ -172,7 +172,7 @@
             this.BuscarBtn.Location = new System.Drawing.Point(530, 266);
             this.BuscarBtn.Name = "BuscarBtn";
             this.BuscarBtn.Size = new System.Drawing.Size(129, 55);
-            this.BuscarBtn.TabIndex = 5;
+            this.BuscarBtn.TabIndex = 4;
             this.BuscarBtn.Text = "Buscar";
             this.BuscarBtn.UseVisualStyleBackColor = true;
             this.BuscarBtn.Click += new System.EventHandler(this.BuscarBtn_Click);

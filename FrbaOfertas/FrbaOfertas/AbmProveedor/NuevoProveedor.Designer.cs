@@ -92,7 +92,7 @@
             this.NuevoBtn.Location = new System.Drawing.Point(153, 325);
             this.NuevoBtn.Name = "NuevoBtn";
             this.NuevoBtn.Size = new System.Drawing.Size(96, 43);
-            this.NuevoBtn.TabIndex = 3;
+            this.NuevoBtn.TabIndex = 9;
             this.NuevoBtn.Text = "Nuevo";
             this.NuevoBtn.UseVisualStyleBackColor = true;
             this.NuevoBtn.Click += new System.EventHandler(this.NuevoBtn_Click);
@@ -102,7 +102,7 @@
             this.LimpiarBtn.Location = new System.Drawing.Point(330, 325);
             this.LimpiarBtn.Name = "LimpiarBtn";
             this.LimpiarBtn.Size = new System.Drawing.Size(96, 43);
-            this.LimpiarBtn.TabIndex = 4;
+            this.LimpiarBtn.TabIndex = 10;
             this.LimpiarBtn.Text = "Limpiar";
             this.LimpiarBtn.UseVisualStyleBackColor = true;
             this.LimpiarBtn.Click += new System.EventHandler(this.LimpiarBtn_Click);
@@ -112,7 +112,7 @@
             this.NomConTB.Location = new System.Drawing.Point(264, 284);
             this.NomConTB.Name = "NomConTB";
             this.NomConTB.Size = new System.Drawing.Size(245, 20);
-            this.NomConTB.TabIndex = 36;
+            this.NomConTB.TabIndex = 8;
             // 
             // label2
             // 
@@ -129,7 +129,7 @@
             this.RubroTB.Location = new System.Drawing.Point(264, 254);
             this.RubroTB.Name = "RubroTB";
             this.RubroTB.Size = new System.Drawing.Size(245, 20);
-            this.RubroTB.TabIndex = 35;
+            this.RubroTB.TabIndex = 7;
             // 
             // label3
             // 
@@ -146,7 +146,7 @@
             this.CiudadTB.Location = new System.Drawing.Point(264, 228);
             this.CiudadTB.Name = "CiudadTB";
             this.CiudadTB.Size = new System.Drawing.Size(245, 20);
-            this.CiudadTB.TabIndex = 34;
+            this.CiudadTB.TabIndex = 6;
             // 
             // label4
             // 
@@ -163,7 +163,7 @@
             this.CodPosTB.Location = new System.Drawing.Point(264, 199);
             this.CodPosTB.Name = "CodPosTB";
             this.CodPosTB.Size = new System.Drawing.Size(245, 20);
-            this.CodPosTB.TabIndex = 33;
+            this.CodPosTB.TabIndex = 5;
             // 
             // label5
             // 
@@ -180,7 +180,7 @@
             this.DirTB.Location = new System.Drawing.Point(264, 170);
             this.DirTB.Name = "DirTB";
             this.DirTB.Size = new System.Drawing.Size(245, 20);
-            this.DirTB.TabIndex = 32;
+            this.DirTB.TabIndex = 4;
             // 
             // label6
             // 
@@ -197,7 +197,7 @@
             this.TelefonoTB.Location = new System.Drawing.Point(264, 140);
             this.TelefonoTB.Name = "TelefonoTB";
             this.TelefonoTB.Size = new System.Drawing.Size(245, 20);
-            this.TelefonoTB.TabIndex = 31;
+            this.TelefonoTB.TabIndex = 3;
             // 
             // label7
             // 
@@ -214,7 +214,7 @@
             this.MailTB.Location = new System.Drawing.Point(264, 110);
             this.MailTB.Name = "MailTB";
             this.MailTB.Size = new System.Drawing.Size(245, 20);
-            this.MailTB.TabIndex = 30;
+            this.MailTB.TabIndex = 2;
             // 
             // label8
             // 
@@ -231,7 +231,7 @@
             this.CuitTB.Location = new System.Drawing.Point(264, 80);
             this.CuitTB.Name = "CuitTB";
             this.CuitTB.Size = new System.Drawing.Size(245, 20);
-            this.CuitTB.TabIndex = 29;
+            this.CuitTB.TabIndex = 1;
             this.CuitTB.Validated += new System.EventHandler(this.CuitTB_Validated);
             // 
             // label9
@@ -249,7 +249,7 @@
             this.RaSoTB.Location = new System.Drawing.Point(264, 49);
             this.RaSoTB.Name = "RaSoTB";
             this.RaSoTB.Size = new System.Drawing.Size(245, 20);
-            this.RaSoTB.TabIndex = 28;
+            this.RaSoTB.TabIndex = 0;
             this.RaSoTB.Validated += new System.EventHandler(this.RaSoTB_Validated);
             // 
             // label10
@@ -279,7 +279,7 @@
             this.VolverBtn.Location = new System.Drawing.Point(637, 242);
             this.VolverBtn.Name = "VolverBtn";
             this.VolverBtn.Size = new System.Drawing.Size(96, 43);
-            this.VolverBtn.TabIndex = 2;
+            this.VolverBtn.TabIndex = 11;
             this.VolverBtn.Text = "Volver";
             this.VolverBtn.UseVisualStyleBackColor = false;
             this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);

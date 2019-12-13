@@ -57,7 +57,7 @@
             this.RolTB.Location = new System.Drawing.Point(133, 37);
             this.RolTB.Name = "RolTB";
             this.RolTB.Size = new System.Drawing.Size(167, 20);
-            this.RolTB.TabIndex = 1;
+            this.RolTB.TabIndex = 0;
             this.RolTB.TextChanged += new System.EventHandler(this.RolTB_TextChanged);
             // 
             // label1
@@ -75,7 +75,7 @@
             this.ModificarBtn.Location = new System.Drawing.Point(380, 213);
             this.ModificarBtn.Name = "ModificarBtn";
             this.ModificarBtn.Size = new System.Drawing.Size(102, 41);
-            this.ModificarBtn.TabIndex = 1;
+            this.ModificarBtn.TabIndex = 2;
             this.ModificarBtn.Text = "Modificar Rol";
             this.ModificarBtn.UseVisualStyleBackColor = true;
             this.ModificarBtn.Click += new System.EventHandler(this.ModificarBtn_Click);
@@ -85,7 +85,7 @@
             this.VolverBtn.Location = new System.Drawing.Point(453, 275);
             this.VolverBtn.Name = "VolverBtn";
             this.VolverBtn.Size = new System.Drawing.Size(102, 41);
-            this.VolverBtn.TabIndex = 2;
+            this.VolverBtn.TabIndex = 4;
             this.VolverBtn.Text = "Volver";
             this.VolverBtn.UseVisualStyleBackColor = true;
             this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);
@@ -110,14 +110,14 @@
             this.RolDGV.Name = "RolDGV";
             this.RolDGV.ReadOnly = true;
             this.RolDGV.Size = new System.Drawing.Size(345, 190);
-            this.RolDGV.TabIndex = 3;
+            this.RolDGV.TabIndex = 1;
             // 
             // EliminarBtn
             // 
             this.EliminarBtn.Location = new System.Drawing.Point(524, 213);
             this.EliminarBtn.Name = "EliminarBtn";
             this.EliminarBtn.Size = new System.Drawing.Size(102, 41);
-            this.EliminarBtn.TabIndex = 4;
+            this.EliminarBtn.TabIndex = 3;
             this.EliminarBtn.Text = "Eliminar Rol";
             this.EliminarBtn.UseVisualStyleBackColor = true;
             this.EliminarBtn.Click += new System.EventHandler(this.EliminarBtn_Click);

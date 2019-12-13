@@ -96,7 +96,7 @@
             this.CiudadTB.Location = new System.Drawing.Point(277, 223);
             this.CiudadTB.Name = "CiudadTB";
             this.CiudadTB.Size = new System.Drawing.Size(259, 20);
-            this.CiudadTB.TabIndex = 58;
+            this.CiudadTB.TabIndex = 6;
             // 
             // Ciudad
             // 
@@ -183,73 +183,73 @@
             this.FechNacTB.Location = new System.Drawing.Point(277, 287);
             this.FechNacTB.Name = "FechNacTB";
             this.FechNacTB.Size = new System.Drawing.Size(259, 20);
-            this.FechNacTB.TabIndex = 49;
+            this.FechNacTB.TabIndex = 8;
             // 
             // CodPostTB
             // 
             this.CodPostTB.Location = new System.Drawing.Point(277, 255);
             this.CodPostTB.Name = "CodPostTB";
             this.CodPostTB.Size = new System.Drawing.Size(259, 20);
-            this.CodPostTB.TabIndex = 48;
+            this.CodPostTB.TabIndex = 7;
             // 
             // DireccionTB
             // 
             this.DireccionTB.Location = new System.Drawing.Point(277, 194);
             this.DireccionTB.Name = "DireccionTB";
             this.DireccionTB.Size = new System.Drawing.Size(259, 20);
-            this.DireccionTB.TabIndex = 47;
+            this.DireccionTB.TabIndex = 5;
             // 
             // TelefonoTB
             // 
             this.TelefonoTB.Location = new System.Drawing.Point(277, 161);
             this.TelefonoTB.Name = "TelefonoTB";
             this.TelefonoTB.Size = new System.Drawing.Size(259, 20);
-            this.TelefonoTB.TabIndex = 46;
+            this.TelefonoTB.TabIndex = 4;
             // 
             // MailTB
             // 
             this.MailTB.Location = new System.Drawing.Point(277, 125);
             this.MailTB.Name = "MailTB";
             this.MailTB.Size = new System.Drawing.Size(259, 20);
-            this.MailTB.TabIndex = 45;
+            this.MailTB.TabIndex = 3;
             // 
             // DniTB
             // 
             this.DniTB.Location = new System.Drawing.Point(277, 93);
             this.DniTB.Name = "DniTB";
             this.DniTB.Size = new System.Drawing.Size(259, 20);
-            this.DniTB.TabIndex = 44;
+            this.DniTB.TabIndex = 2;
             // 
             // ApellidoTB
             // 
             this.ApellidoTB.Location = new System.Drawing.Point(277, 61);
             this.ApellidoTB.Name = "ApellidoTB";
             this.ApellidoTB.Size = new System.Drawing.Size(259, 20);
-            this.ApellidoTB.TabIndex = 43;
+            this.ApellidoTB.TabIndex = 1;
             // 
             // NombreTB
             // 
             this.NombreTB.Location = new System.Drawing.Point(277, 25);
             this.NombreTB.Name = "NombreTB";
             this.NombreTB.Size = new System.Drawing.Size(259, 20);
-            this.NombreTB.TabIndex = 42;
+            this.NombreTB.TabIndex = 0;
             // 
             // ModificarBtn
             // 
-            this.ModificarBtn.Location = new System.Drawing.Point(755, 300);
+            this.ModificarBtn.Location = new System.Drawing.Point(599, 300);
             this.ModificarBtn.Name = "ModificarBtn";
             this.ModificarBtn.Size = new System.Drawing.Size(120, 51);
-            this.ModificarBtn.TabIndex = 40;
+            this.ModificarBtn.TabIndex = 9;
             this.ModificarBtn.Text = "Modificar";
             this.ModificarBtn.UseVisualStyleBackColor = true;
             this.ModificarBtn.Click += new System.EventHandler(this.ModificarBtn_Click);
             // 
             // VolverBtn
             // 
-            this.VolverBtn.Location = new System.Drawing.Point(599, 300);
+            this.VolverBtn.Location = new System.Drawing.Point(736, 300);
             this.VolverBtn.Name = "VolverBtn";
             this.VolverBtn.Size = new System.Drawing.Size(120, 51);
-            this.VolverBtn.TabIndex = 39;
+            this.VolverBtn.TabIndex = 10;
             this.VolverBtn.Text = "Volver";
             this.VolverBtn.UseVisualStyleBackColor = true;
             this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);

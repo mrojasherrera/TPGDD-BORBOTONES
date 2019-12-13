@@ -19,7 +19,6 @@ namespace FrbaOfertas.Facturar
         {
             InitializeComponent();
             String fecha_sistema = Properties.Settings.Default.fechaSistema;
-            //DateTime unaFecha = Convert.ToDateTime(fecha_sistema, CultureInfo.InvariantCulture);
             DateTime unaFecha = Convert.ToDateTime(fecha_sistema);
             DesdeDTP.Value = unaFecha;
             HastaDTP.Value = unaFecha;

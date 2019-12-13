@@ -38,8 +38,8 @@ namespace FrbaOfertas.PantallaUsuarios
 
         private void OfertaBtn_Click(object sender, EventArgs e)
         {
-            CrearOferta.NuevaOferta oferta = new CrearOferta.NuevaOferta();
-            oferta.Show();
+            CrearOferta.NuevaOferta oferta = new CrearOferta.NuevaOferta(ProveedorTB.Text);
+            oferta.ShowDialog();
         }
 
         private void SalirBtn_Click(object sender, EventArgs e)

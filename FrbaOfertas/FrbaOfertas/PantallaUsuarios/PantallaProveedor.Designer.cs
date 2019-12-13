@@ -60,7 +60,7 @@
             this.RsTB.Location = new System.Drawing.Point(195, 93);
             this.RsTB.Name = "RsTB";
             this.RsTB.Size = new System.Drawing.Size(163, 20);
-            this.RsTB.TabIndex = 3;
+            this.RsTB.TabIndex = 1;
             // 
             // ProveedorTB
             // 
@@ -68,7 +68,7 @@
             this.ProveedorTB.Location = new System.Drawing.Point(195, 48);
             this.ProveedorTB.Name = "ProveedorTB";
             this.ProveedorTB.Size = new System.Drawing.Size(163, 20);
-            this.ProveedorTB.TabIndex = 2;
+            this.ProveedorTB.TabIndex = 0;
             // 
             // label2
             // 
@@ -107,7 +107,7 @@
             this.CambiarBtn.Location = new System.Drawing.Point(30, 93);
             this.CambiarBtn.Name = "CambiarBtn";
             this.CambiarBtn.Size = new System.Drawing.Size(140, 47);
-            this.CambiarBtn.TabIndex = 1;
+            this.CambiarBtn.TabIndex = 3;
             this.CambiarBtn.Text = "Cambiar Contraseña";
             this.CambiarBtn.UseVisualStyleBackColor = true;
             this.CambiarBtn.Click += new System.EventHandler(this.CambiarBtn_Click);
@@ -118,7 +118,7 @@
             this.OfertaBtn.Location = new System.Drawing.Point(30, 34);
             this.OfertaBtn.Name = "OfertaBtn";
             this.OfertaBtn.Size = new System.Drawing.Size(140, 47);
-            this.OfertaBtn.TabIndex = 0;
+            this.OfertaBtn.TabIndex = 2;
             this.OfertaBtn.Text = "Nueva oferta";
             this.OfertaBtn.UseVisualStyleBackColor = true;
             this.OfertaBtn.Click += new System.EventHandler(this.OfertaBtn_Click);
@@ -130,7 +130,7 @@
             this.SalirBtn.Location = new System.Drawing.Point(148, 177);
             this.SalirBtn.Name = "SalirBtn";
             this.SalirBtn.Size = new System.Drawing.Size(125, 40);
-            this.SalirBtn.TabIndex = 2;
+            this.SalirBtn.TabIndex = 4;
             this.SalirBtn.Text = "Salir";
             this.SalirBtn.UseVisualStyleBackColor = false;
             this.SalirBtn.Click += new System.EventHandler(this.SalirBtn_Click);
