@@ -65,3 +65,6 @@ C:\Users\ABM\Documents\gprueba\Pruebas01\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaO
 C:\Users\ABM\Desktop\gdPrueba\Pruebas01\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.ComprarOferta.Ofertas.resources
 C:\Users\ABM\Desktop\gdPrueba\Pruebas01\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.Facturar.FacturarProv.resources
 C:\Users\ABM\Desktop\gdPrueba\Pruebas01\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.Facturar.EmitirFac.resources
+C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\bin\Debug\FrbaOfertas.exe.config
+C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.exe
+C:\Users\ABM\Desktop\TPGDD-BORBOTONES\FrbaOfertas\FrbaOfertas\obj\Debug\FrbaOfertas.pdb
