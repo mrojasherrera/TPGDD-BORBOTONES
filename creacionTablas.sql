@@ -239,6 +239,7 @@ insert into LOS_BORBOTONES.Carga (Cli_Dni, Carga_Credito, Carga_Fecha, Tipo_Pago
 
 /*** MIGRACION FACTURA ***/
 
+/*
 SET IDENTITY_INSERT LOS_BORBOTONES.Factura ON;
 insert into LOS_BORBOTONES.Factura
 	(Factura_Nro, Factura_Fecha, Factura_Importe, Provee_CUIT, Fecha_Desde, Fecha_Hasta)
@@ -248,6 +249,19 @@ insert into LOS_BORBOTONES.Factura
 	group by Factura_Nro, Factura_Fecha, Provee_CUIT
 	order by Factura_Nro
 SET IDENTITY_INSERT LOS_BORBOTONES.Factura OFF;
+*/
+
+SET IDENTITY_INSERT LOS_BORBOTONES.Factura ON;
+insert into LOS_BORBOTONES.Factura
+	(Factura_Nro, Factura_Fecha, Factura_Importe, Provee_CUIT, Fecha_Desde, Fecha_Hasta)
+	select Factura_Nro, Factura_Fecha, SUM(Oferta_Precio), Provee_CUIT, min(Oferta_Fecha_Compra), max(Oferta_Fecha_Compra)
+	from gd_esquema.Maestra
+	where Oferta_Fecha_Compra is not null AND Factura_Nro is not null
+	group by Factura_Nro, Factura_Fecha, Provee_CUIT
+	order by Factura_Nro
+SET IDENTITY_INSERT LOS_BORBOTONES.Factura OFF;
+
+
 
 
 /*** MIGRACION PROVEEDOR ***/
@@ -271,12 +285,12 @@ insert into LOS_BORBOTONES.Cupon (
 		g1.Oferta_Codigo, g1.Cli_Dni, g1.Cli_Dest_Nombre, g1.Cli_Dest_Apellido, g1.Cli_Dest_Dni,
 		g1.Cli_Dest_Direccion, g1.Cli_Dest_Telefono, g1.Cli_Dest_Mail, g1.Cli_Dest_Fecha_Nac,
 		g1.Cli_Dest_Ciudad, g1.Oferta_Fecha_Compra, 
-		(select g2.Oferta_Entregado_Fecha from gd_esquema.Maestra g2 
+		(select top 1 g2.Oferta_Entregado_Fecha from gd_esquema.Maestra g2 
 			where g1.Cli_Dni = g2.Cli_Dni and g1.Oferta_Codigo = g2.Oferta_Codigo 
 					and g1.Oferta_Fecha_Compra = g2.Oferta_Fecha_Compra 
 					and g2.Oferta_Entregado_Fecha is not null) Oferta_Entregado_Fecha, 
 		Oferta_Fecha_Venc, 
-		(select g2.Factura_Nro from gd_esquema.Maestra g2 
+		(select top 1 g2.Factura_Nro from gd_esquema.Maestra g2 
 			where g1.Cli_Dni = g2.Cli_Dni and g1.Oferta_Codigo = g2.Oferta_Codigo 
 			and g1.Oferta_Fecha_Compra = g2.Oferta_Fecha_Compra 
 			and g2.Factura_Nro is not null) Factura_Nro
