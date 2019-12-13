@@ -40,6 +40,7 @@
             this.AdmTB = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.EntregarBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -49,16 +50,17 @@
             // 
             this.SalirBtn.BackColor = System.Drawing.SystemColors.Highlight;
             this.SalirBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SalirBtn.Location = new System.Drawing.Point(257, 331);
+            this.SalirBtn.Location = new System.Drawing.Point(350, 332);
             this.SalirBtn.Name = "SalirBtn";
             this.SalirBtn.Size = new System.Drawing.Size(135, 49);
-            this.SalirBtn.TabIndex = 7;
-            this.SalirBtn.Text = "Salir";
+            this.SalirBtn.TabIndex = 8;
+            this.SalirBtn.Text = "Cerrar Sesión";
             this.SalirBtn.UseVisualStyleBackColor = false;
             this.SalirBtn.Click += new System.EventHandler(this.SalirBtn_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.EntregarBtn);
             this.groupBox1.Controls.Add(this.ClienteBtn);
             this.groupBox1.Controls.Add(this.EstadisticoBtn);
             this.groupBox1.Controls.Add(this.ProveedorBtn);
@@ -67,7 +69,7 @@
             this.groupBox1.Controls.Add(this.CreditoBtn);
             this.groupBox1.Location = new System.Drawing.Point(12, 109);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(606, 216);
+            this.groupBox1.Size = new System.Drawing.Size(771, 216);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Acciones";
@@ -86,7 +88,7 @@
             // EstadisticoBtn
             // 
             this.EstadisticoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EstadisticoBtn.Location = new System.Drawing.Point(245, 121);
+            this.EstadisticoBtn.Location = new System.Drawing.Point(23, 121);
             this.EstadisticoBtn.Name = "EstadisticoBtn";
             this.EstadisticoBtn.Size = new System.Drawing.Size(135, 56);
             this.EstadisticoBtn.TabIndex = 5;
@@ -108,7 +110,7 @@
             // FacturarBtn
             // 
             this.FacturarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FacturarBtn.Location = new System.Drawing.Point(439, 121);
+            this.FacturarBtn.Location = new System.Drawing.Point(245, 121);
             this.FacturarBtn.Name = "FacturarBtn";
             this.FacturarBtn.Size = new System.Drawing.Size(135, 56);
             this.FacturarBtn.TabIndex = 6;
@@ -130,7 +132,7 @@
             // CreditoBtn
             // 
             this.CreditoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreditoBtn.Location = new System.Drawing.Point(23, 121);
+            this.CreditoBtn.Location = new System.Drawing.Point(620, 37);
             this.CreditoBtn.Name = "CreditoBtn";
             this.CreditoBtn.Size = new System.Drawing.Size(135, 56);
             this.CreditoBtn.TabIndex = 4;
@@ -170,18 +172,29 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::FrbaOfertas.Properties.Resources.icono_planificar_acciones_comerciales;
-            this.pictureBox1.Location = new System.Drawing.Point(478, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(564, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(140, 91);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
+            // EntregarBtn
+            // 
+            this.EntregarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EntregarBtn.Location = new System.Drawing.Point(439, 121);
+            this.EntregarBtn.Name = "EntregarBtn";
+            this.EntregarBtn.Size = new System.Drawing.Size(135, 56);
+            this.EntregarBtn.TabIndex = 7;
+            this.EntregarBtn.Text = "Entregar Oferta";
+            this.EntregarBtn.UseVisualStyleBackColor = true;
+            this.EntregarBtn.Click += new System.EventHandler(this.EntregarBtn_Click);
+            // 
             // PantallaAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(630, 393);
+            this.ClientSize = new System.Drawing.Size(795, 393);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.SalirBtn);
             this.Controls.Add(this.groupBox1);
@@ -210,5 +223,6 @@
         private System.Windows.Forms.Button RolBtn;
         private System.Windows.Forms.Button CreditoBtn;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button EntregarBtn;
     }
 }

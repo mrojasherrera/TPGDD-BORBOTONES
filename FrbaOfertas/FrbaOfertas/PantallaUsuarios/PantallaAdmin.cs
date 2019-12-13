@@ -61,5 +61,11 @@ namespace FrbaOfertas.PantallaUsuarios
             ListadoEstadistico.Estadistico listado = new ListadoEstadistico.Estadistico();
             listado.ShowDialog();
         }
+
+        private void EntregarBtn_Click(object sender, EventArgs e)
+        {
+            EntregaOferta.BuscarOferta entregar = new EntregaOferta.BuscarOferta();
+            entregar.ShowDialog();
+        }
     }
 }

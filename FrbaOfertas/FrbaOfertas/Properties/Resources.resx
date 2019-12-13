@@ -175,4 +175,10 @@
   <data name="_69943" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\69943.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="_25872277_tres_cajas_de_envío_en_el_carro_de_mano_de_un_servicio_de_paquetería" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\25872277-tres-cajas-de-envío-en-el-carro-de-mano-de-un-servicio-de-paquetería.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delivery_20_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delivery-20-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

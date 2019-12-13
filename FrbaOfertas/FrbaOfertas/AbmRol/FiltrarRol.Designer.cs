@@ -72,6 +72,7 @@
             // 
             // ModificarBtn
             // 
+            this.ModificarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ModificarBtn.Location = new System.Drawing.Point(380, 213);
             this.ModificarBtn.Name = "ModificarBtn";
             this.ModificarBtn.Size = new System.Drawing.Size(102, 41);
@@ -82,11 +83,12 @@
             // 
             // VolverBtn
             // 
+            this.VolverBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VolverBtn.Location = new System.Drawing.Point(453, 275);
             this.VolverBtn.Name = "VolverBtn";
             this.VolverBtn.Size = new System.Drawing.Size(102, 41);
             this.VolverBtn.TabIndex = 4;
-            this.VolverBtn.Text = "Volver";
+            this.VolverBtn.Text = "<< Volver";
             this.VolverBtn.UseVisualStyleBackColor = true;
             this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);
             // 
@@ -114,6 +116,7 @@
             // 
             // EliminarBtn
             // 
+            this.EliminarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EliminarBtn.Location = new System.Drawing.Point(524, 213);
             this.EliminarBtn.Name = "EliminarBtn";
             this.EliminarBtn.Size = new System.Drawing.Size(102, 41);

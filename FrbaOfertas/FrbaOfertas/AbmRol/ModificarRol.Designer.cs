@@ -70,6 +70,7 @@
             // 
             // GuardarBtn
             // 
+            this.GuardarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GuardarBtn.Location = new System.Drawing.Point(433, 446);
             this.GuardarBtn.Name = "GuardarBtn";
             this.GuardarBtn.Size = new System.Drawing.Size(101, 45);
@@ -80,16 +81,18 @@
             // 
             // VolverBtn
             // 
+            this.VolverBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VolverBtn.Location = new System.Drawing.Point(208, 446);
             this.VolverBtn.Name = "VolverBtn";
             this.VolverBtn.Size = new System.Drawing.Size(101, 45);
             this.VolverBtn.TabIndex = 5;
-            this.VolverBtn.Text = "Volver";
+            this.VolverBtn.Text = "<< Volver";
             this.VolverBtn.UseVisualStyleBackColor = true;
             this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);
             // 
             // EliminarBtn
             // 
+            this.EliminarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EliminarBtn.Location = new System.Drawing.Point(315, 333);
             this.EliminarBtn.Name = "EliminarBtn";
             this.EliminarBtn.Size = new System.Drawing.Size(112, 51);
@@ -100,6 +103,7 @@
             // 
             // AgregarBtn
             // 
+            this.AgregarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AgregarBtn.Location = new System.Drawing.Point(315, 251);
             this.AgregarBtn.Name = "AgregarBtn";
             this.AgregarBtn.Size = new System.Drawing.Size(112, 51);

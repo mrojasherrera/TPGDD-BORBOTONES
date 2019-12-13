@@ -170,7 +170,7 @@
             this.VolverBtn.Name = "VolverBtn";
             this.VolverBtn.Size = new System.Drawing.Size(104, 41);
             this.VolverBtn.TabIndex = 6;
-            this.VolverBtn.Text = "Volver";
+            this.VolverBtn.Text = "<< Volver";
             this.VolverBtn.UseVisualStyleBackColor = true;
             this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);
             // 

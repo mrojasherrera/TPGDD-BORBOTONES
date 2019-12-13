@@ -105,9 +105,9 @@
             // CambiarBtn
             // 
             this.CambiarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CambiarBtn.Location = new System.Drawing.Point(77, 263);
+            this.CambiarBtn.Location = new System.Drawing.Point(48, 251);
             this.CambiarBtn.Name = "CambiarBtn";
-            this.CambiarBtn.Size = new System.Drawing.Size(90, 37);
+            this.CambiarBtn.Size = new System.Drawing.Size(108, 45);
             this.CambiarBtn.TabIndex = 3;
             this.CambiarBtn.Text = "Cambiar";
             this.CambiarBtn.UseVisualStyleBackColor = true;
@@ -116,11 +116,11 @@
             // VolverBtn
             // 
             this.VolverBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VolverBtn.Location = new System.Drawing.Point(242, 263);
+            this.VolverBtn.Location = new System.Drawing.Point(213, 251);
             this.VolverBtn.Name = "VolverBtn";
-            this.VolverBtn.Size = new System.Drawing.Size(90, 37);
+            this.VolverBtn.Size = new System.Drawing.Size(108, 45);
             this.VolverBtn.TabIndex = 4;
-            this.VolverBtn.Text = "Volver";
+            this.VolverBtn.Text = "<< Volver";
             this.VolverBtn.UseVisualStyleBackColor = true;
             this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);
             // 
@@ -138,7 +138,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(598, 338);
+            this.ClientSize = new System.Drawing.Size(598, 315);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.VolverBtn);
             this.Controls.Add(this.CambiarBtn);

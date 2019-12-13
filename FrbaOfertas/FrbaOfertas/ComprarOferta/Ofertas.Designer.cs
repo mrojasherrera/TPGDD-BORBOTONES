@@ -30,7 +30,6 @@
         {
             this.VolverBtn = new System.Windows.Forms.Button();
             this.ComprarBtn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.BuscarTB = new System.Windows.Forms.TextBox();
             this.CantNUD = new System.Windows.Forms.NumericUpDown();
@@ -42,11 +41,12 @@
             this.UsuarioTB = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.OfertaDGV = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CantNUD)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OfertaDGV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // VolverBtn
@@ -56,7 +56,7 @@
             this.VolverBtn.Name = "VolverBtn";
             this.VolverBtn.Size = new System.Drawing.Size(127, 52);
             this.VolverBtn.TabIndex = 6;
-            this.VolverBtn.Text = "Volver";
+            this.VolverBtn.Text = "<< Volver";
             this.VolverBtn.UseVisualStyleBackColor = true;
             this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);
             // 
@@ -70,16 +70,6 @@
             this.ComprarBtn.Text = "Comprar Oferta";
             this.ComprarBtn.UseVisualStyleBackColor = true;
             this.ComprarBtn.Click += new System.EventHandler(this.ComprarBtn_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::FrbaOfertas.Properties.Resources._185_1850575_las_compras_en_linea_venta_graphic_icono_online_png;
-            this.pictureBox1.Location = new System.Drawing.Point(725, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(272, 164);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
             // 
             // groupBox2
             // 
@@ -188,6 +178,16 @@
             this.OfertaDGV.Size = new System.Drawing.Size(1148, 315);
             this.OfertaDGV.TabIndex = 4;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::FrbaOfertas.Properties.Resources._185_1850575_las_compras_en_linea_venta_graphic_icono_online_png;
+            this.pictureBox1.Location = new System.Drawing.Point(725, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(272, 164);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
             // Ofertas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -201,13 +201,13 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Ofertas";
             this.Text = "Ofertas";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CantNUD)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OfertaDGV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

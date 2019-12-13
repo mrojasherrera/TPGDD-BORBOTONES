@@ -152,6 +152,18 @@
     <Compile Include="CrearOferta\NuevaOferta.Designer.cs">
       <DependentUpon>NuevaOferta.cs</DependentUpon>
     </Compile>
+    <Compile Include="EntregaOferta\BuscarOferta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntregaOferta\BuscarOferta.Designer.cs">
+      <DependentUpon>BuscarOferta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntregaOferta\EntregoOferta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntregaOferta\EntregoOferta.Designer.cs">
+      <DependentUpon>EntregoOferta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Facturar\EmitirFac.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -265,6 +277,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CrearOferta\NuevaOferta.resx">
       <DependentUpon>NuevaOferta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntregaOferta\BuscarOferta.resx">
+      <DependentUpon>BuscarOferta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntregaOferta\EntregoOferta.resx">
+      <DependentUpon>EntregoOferta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Facturar\EmitirFac.resx">
       <DependentUpon>EmitirFac.cs</DependentUpon>
@@ -391,6 +409,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\69943.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25872277-tres-cajas-de-envío-en-el-carro-de-mano-de-un-servicio-de-paquetería.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery-20-512.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

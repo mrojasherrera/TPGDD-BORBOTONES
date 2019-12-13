@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.CodTB = new System.Windows.Forms.TextBox();
+            this.CuitTB = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.CantCli = new System.Windows.Forms.NumericUpDown();
             this.CantT = new System.Windows.Forms.NumericUpDown();
             this.PrecioList = new System.Windows.Forms.NumericUpDown();
@@ -47,10 +51,6 @@
             this.VolverBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LimpiarBtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.CuitTB = new System.Windows.Forms.TextBox();
-            this.CodTB = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CantCli)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CantT)).BeginInit();
@@ -85,6 +85,41 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nueva oferta";
+            // 
+            // CodTB
+            // 
+            this.CodTB.Location = new System.Drawing.Point(274, 63);
+            this.CodTB.Name = "CodTB";
+            this.CodTB.Size = new System.Drawing.Size(275, 20);
+            this.CodTB.TabIndex = 1;
+            // 
+            // CuitTB
+            // 
+            this.CuitTB.Enabled = false;
+            this.CuitTB.Location = new System.Drawing.Point(274, 35);
+            this.CuitTB.Name = "CuitTB";
+            this.CuitTB.Size = new System.Drawing.Size(275, 20);
+            this.CuitTB.TabIndex = 0;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(35, 63);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(85, 20);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "CÓDIGO:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(35, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(172, 20);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "PROVEEDOR CUIT:";
             // 
             // CantCli
             // 
@@ -247,7 +282,7 @@
             this.VolverBtn.Name = "VolverBtn";
             this.VolverBtn.Size = new System.Drawing.Size(113, 47);
             this.VolverBtn.TabIndex = 11;
-            this.VolverBtn.Text = "Volver";
+            this.VolverBtn.Text = "<< Volver";
             this.VolverBtn.UseVisualStyleBackColor = true;
             this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);
             // 
@@ -271,41 +306,6 @@
             this.LimpiarBtn.Text = "Limpiar";
             this.LimpiarBtn.UseVisualStyleBackColor = true;
             this.LimpiarBtn.Click += new System.EventHandler(this.LimpiarBtn_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(35, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 20);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "PROVEEDOR CUIT:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(35, 63);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(85, 20);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "CÓDIGO:";
-            // 
-            // CuitTB
-            // 
-            this.CuitTB.Enabled = false;
-            this.CuitTB.Location = new System.Drawing.Point(274, 35);
-            this.CuitTB.Name = "CuitTB";
-            this.CuitTB.Size = new System.Drawing.Size(275, 20);
-            this.CuitTB.TabIndex = 0;
-            // 
-            // CodTB
-            // 
-            this.CodTB.Location = new System.Drawing.Point(274, 63);
-            this.CodTB.Name = "CodTB";
-            this.CodTB.Size = new System.Drawing.Size(275, 20);
-            this.CodTB.TabIndex = 1;
             // 
             // NuevaOferta
             // 

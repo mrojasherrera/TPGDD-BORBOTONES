@@ -120,7 +120,7 @@
             this.VolverTB.Name = "VolverTB";
             this.VolverTB.Size = new System.Drawing.Size(131, 49);
             this.VolverTB.TabIndex = 4;
-            this.VolverTB.Text = "Volver";
+            this.VolverTB.Text = "<< Volver";
             this.VolverTB.UseVisualStyleBackColor = true;
             this.VolverTB.Click += new System.EventHandler(this.VolverTB_Click);
             // 

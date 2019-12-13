@@ -73,6 +73,16 @@ namespace FrbaOfertas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _25872277_tres_cajas_de_envío_en_el_carro_de_mano_de_un_servicio_de_paquetería {
+            get {
+                object obj = ResourceManager.GetObject("_25872277_tres_cajas_de_envío_en_el_carro_de_mano_de_un_servicio_de_paquetería", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _29461_200 {
             get {
                 object obj = ResourceManager.GetObject("_29461_200", resourceCulture);
@@ -126,6 +136,16 @@ namespace FrbaOfertas.Properties {
         internal static System.Drawing.Bitmap add_file_8846 {
             get {
                 object obj = ResourceManager.GetObject("add_file_8846", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delivery_20_512 {
+            get {
+                object obj = ResourceManager.GetObject("delivery_20_512", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

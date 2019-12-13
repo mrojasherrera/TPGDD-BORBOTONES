@@ -60,9 +60,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.LimpiarBtn);
             this.groupBox1.Controls.Add(this.FechaNacDTP);
-            this.groupBox1.Controls.Add(this.NuevoBtn);
             this.groupBox1.Controls.Add(this.CiudadTB);
             this.groupBox1.Controls.Add(this.Ciudad);
             this.groupBox1.Controls.Add(this.FechNac);
@@ -82,14 +80,14 @@
             this.groupBox1.Controls.Add(this.NombreTB);
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(577, 426);
+            this.groupBox1.Size = new System.Drawing.Size(577, 406);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nuevo cliente";
             // 
             // LimpiarBtn
             // 
-            this.LimpiarBtn.Location = new System.Drawing.Point(302, 365);
+            this.LimpiarBtn.Location = new System.Drawing.Point(728, 279);
             this.LimpiarBtn.Name = "LimpiarBtn";
             this.LimpiarBtn.Size = new System.Drawing.Size(106, 47);
             this.LimpiarBtn.TabIndex = 10;
@@ -99,14 +97,14 @@
             // 
             // FechaNacDTP
             // 
-            this.FechaNacDTP.Location = new System.Drawing.Point(285, 324);
+            this.FechaNacDTP.Location = new System.Drawing.Point(285, 355);
             this.FechaNacDTP.Name = "FechaNacDTP";
             this.FechaNacDTP.Size = new System.Drawing.Size(259, 20);
             this.FechaNacDTP.TabIndex = 8;
             // 
             // NuevoBtn
             // 
-            this.NuevoBtn.Location = new System.Drawing.Point(171, 363);
+            this.NuevoBtn.Location = new System.Drawing.Point(596, 277);
             this.NuevoBtn.Name = "NuevoBtn";
             this.NuevoBtn.Size = new System.Drawing.Size(106, 49);
             this.NuevoBtn.TabIndex = 9;
@@ -116,7 +114,7 @@
             // 
             // CiudadTB
             // 
-            this.CiudadTB.Location = new System.Drawing.Point(285, 263);
+            this.CiudadTB.Location = new System.Drawing.Point(285, 277);
             this.CiudadTB.Name = "CiudadTB";
             this.CiudadTB.Size = new System.Drawing.Size(259, 20);
             this.CiudadTB.TabIndex = 6;
@@ -125,7 +123,7 @@
             // 
             this.Ciudad.AutoSize = true;
             this.Ciudad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ciudad.Location = new System.Drawing.Point(29, 263);
+            this.Ciudad.Location = new System.Drawing.Point(29, 277);
             this.Ciudad.Name = "Ciudad";
             this.Ciudad.Size = new System.Drawing.Size(83, 20);
             this.Ciudad.TabIndex = 37;
@@ -135,7 +133,7 @@
             // 
             this.FechNac.AutoSize = true;
             this.FechNac.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FechNac.Location = new System.Drawing.Point(29, 325);
+            this.FechNac.Location = new System.Drawing.Point(29, 355);
             this.FechNac.Name = "FechNac";
             this.FechNac.Size = new System.Drawing.Size(218, 20);
             this.FechNac.TabIndex = 36;
@@ -145,7 +143,7 @@
             // 
             this.CodPost.AutoSize = true;
             this.CodPost.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CodPost.Location = new System.Drawing.Point(29, 292);
+            this.CodPost.Location = new System.Drawing.Point(29, 317);
             this.CodPost.Name = "CodPost";
             this.CodPost.Size = new System.Drawing.Size(158, 20);
             this.CodPost.TabIndex = 35;
@@ -155,7 +153,7 @@
             // 
             this.Direccion.AutoSize = true;
             this.Direccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Direccion.Location = new System.Drawing.Point(29, 230);
+            this.Direccion.Location = new System.Drawing.Point(29, 237);
             this.Direccion.Name = "Direccion";
             this.Direccion.Size = new System.Drawing.Size(113, 20);
             this.Direccion.TabIndex = 34;
@@ -165,7 +163,7 @@
             // 
             this.Telefono.AutoSize = true;
             this.Telefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Telefono.Location = new System.Drawing.Point(29, 199);
+            this.Telefono.Location = new System.Drawing.Point(29, 197);
             this.Telefono.Name = "Telefono";
             this.Telefono.Size = new System.Drawing.Size(107, 20);
             this.Telefono.TabIndex = 33;
@@ -175,7 +173,7 @@
             // 
             this.Mail.AutoSize = true;
             this.Mail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Mail.Location = new System.Drawing.Point(29, 161);
+            this.Mail.Location = new System.Drawing.Point(29, 157);
             this.Mail.Name = "Mail";
             this.Mail.Size = new System.Drawing.Size(56, 20);
             this.Mail.TabIndex = 32;
@@ -185,7 +183,7 @@
             // 
             this.Dni.AutoSize = true;
             this.Dni.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dni.Location = new System.Drawing.Point(29, 125);
+            this.Dni.Location = new System.Drawing.Point(29, 117);
             this.Dni.Name = "Dni";
             this.Dni.Size = new System.Drawing.Size(45, 20);
             this.Dni.TabIndex = 31;
@@ -195,7 +193,7 @@
             // 
             this.Apellido.AutoSize = true;
             this.Apellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Apellido.Location = new System.Drawing.Point(29, 91);
+            this.Apellido.Location = new System.Drawing.Point(29, 77);
             this.Apellido.Name = "Apellido";
             this.Apellido.Size = new System.Drawing.Size(101, 20);
             this.Apellido.TabIndex = 30;
@@ -205,7 +203,7 @@
             // 
             this.Nombre.AutoSize = true;
             this.Nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Nombre.Location = new System.Drawing.Point(29, 54);
+            this.Nombre.Location = new System.Drawing.Point(29, 37);
             this.Nombre.Name = "Nombre";
             this.Nombre.Size = new System.Drawing.Size(90, 20);
             this.Nombre.TabIndex = 29;
@@ -213,50 +211,53 @@
             // 
             // CodPostTB
             // 
-            this.CodPostTB.Location = new System.Drawing.Point(285, 294);
+            this.CodPostTB.Location = new System.Drawing.Point(285, 317);
             this.CodPostTB.Name = "CodPostTB";
             this.CodPostTB.Size = new System.Drawing.Size(259, 20);
             this.CodPostTB.TabIndex = 7;
+            this.CodPostTB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CodPostTB_KeyPress);
             // 
             // DireccionTB
             // 
-            this.DireccionTB.Location = new System.Drawing.Point(285, 230);
+            this.DireccionTB.Location = new System.Drawing.Point(285, 237);
             this.DireccionTB.Name = "DireccionTB";
             this.DireccionTB.Size = new System.Drawing.Size(259, 20);
             this.DireccionTB.TabIndex = 5;
             // 
             // TelefonoTB
             // 
-            this.TelefonoTB.Location = new System.Drawing.Point(285, 199);
+            this.TelefonoTB.Location = new System.Drawing.Point(285, 197);
             this.TelefonoTB.Name = "TelefonoTB";
             this.TelefonoTB.Size = new System.Drawing.Size(259, 20);
             this.TelefonoTB.TabIndex = 4;
+            this.TelefonoTB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TelefonoTB_KeyPress);
             // 
             // MailTB
             // 
-            this.MailTB.Location = new System.Drawing.Point(285, 161);
+            this.MailTB.Location = new System.Drawing.Point(285, 157);
             this.MailTB.Name = "MailTB";
             this.MailTB.Size = new System.Drawing.Size(259, 20);
             this.MailTB.TabIndex = 3;
             // 
             // DniTB
             // 
-            this.DniTB.Location = new System.Drawing.Point(285, 125);
+            this.DniTB.Location = new System.Drawing.Point(285, 117);
             this.DniTB.Name = "DniTB";
             this.DniTB.Size = new System.Drawing.Size(259, 20);
             this.DniTB.TabIndex = 2;
+            this.DniTB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DniTB_KeyPress);
             this.DniTB.Validated += new System.EventHandler(this.DniTB_Validated);
             // 
             // ApellidoTB
             // 
-            this.ApellidoTB.Location = new System.Drawing.Point(285, 91);
+            this.ApellidoTB.Location = new System.Drawing.Point(285, 77);
             this.ApellidoTB.Name = "ApellidoTB";
             this.ApellidoTB.Size = new System.Drawing.Size(259, 20);
             this.ApellidoTB.TabIndex = 1;
             // 
             // NombreTB
             // 
-            this.NombreTB.Location = new System.Drawing.Point(285, 54);
+            this.NombreTB.Location = new System.Drawing.Point(285, 37);
             this.NombreTB.Name = "NombreTB";
             this.NombreTB.Size = new System.Drawing.Size(259, 20);
             this.NombreTB.TabIndex = 0;
@@ -275,11 +276,11 @@
             // 
             this.VolverBtn.BackColor = System.Drawing.Color.DodgerBlue;
             this.VolverBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VolverBtn.Location = new System.Drawing.Point(684, 310);
+            this.VolverBtn.Location = new System.Drawing.Point(670, 356);
             this.VolverBtn.Name = "VolverBtn";
             this.VolverBtn.Size = new System.Drawing.Size(106, 49);
             this.VolverBtn.TabIndex = 11;
-            this.VolverBtn.Text = "Volver";
+            this.VolverBtn.Text = "<< Volver";
             this.VolverBtn.UseVisualStyleBackColor = false;
             this.VolverBtn.Click += new System.EventHandler(this.VolverBtn_Click);
             // 
@@ -291,9 +292,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(846, 451);
+            this.ClientSize = new System.Drawing.Size(846, 437);
+            this.Controls.Add(this.LimpiarBtn);
             this.Controls.Add(this.VolverBtn);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.NuevoBtn);
             this.Controls.Add(this.groupBox1);
             this.Name = "NuevoCliente";
             this.Text = "NuevoCliente";

@@ -131,7 +131,7 @@
             this.SalirBtn.Name = "SalirBtn";
             this.SalirBtn.Size = new System.Drawing.Size(112, 49);
             this.SalirBtn.TabIndex = 5;
-            this.SalirBtn.Text = "Salir";
+            this.SalirBtn.Text = "Cerrar Sesión";
             this.SalirBtn.UseVisualStyleBackColor = false;
             this.SalirBtn.Click += new System.EventHandler(this.SalirBtn_Click);
             // 

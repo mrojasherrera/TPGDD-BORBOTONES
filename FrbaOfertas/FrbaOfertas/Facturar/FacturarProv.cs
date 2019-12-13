@@ -35,7 +35,7 @@ namespace FrbaOfertas.Facturar
             cadena = "SELECT p.Provee_RS 'Razón Social', p.Provee_CUIT CUIT, p.Provee_Mail Email ";
             cadena += "FROM LOS_BORBOTONES.Proveedor p JOIN LOS_BORBOTONES.Usuario u ON (p.User_name = u.User_name) ";
             cadena += "WHERE u.Habilitado = 1 ";
-            SqlCommand comando = new SqlCommand(cadena, conexion);
+            SqlCommand comando = new SqlCommand(cadena, conexion);            
             SqlDataAdapter data = new SqlDataAdapter(comando);
             DataSet dataSet = new DataSet();
             data.Fill(dataSet);

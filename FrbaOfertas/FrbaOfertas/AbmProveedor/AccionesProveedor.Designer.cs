@@ -52,9 +52,10 @@
             // 
             // RestaurarBtn
             // 
+            this.RestaurarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RestaurarBtn.Location = new System.Drawing.Point(46, 177);
             this.RestaurarBtn.Name = "RestaurarBtn";
-            this.RestaurarBtn.Size = new System.Drawing.Size(138, 50);
+            this.RestaurarBtn.Size = new System.Drawing.Size(144, 50);
             this.RestaurarBtn.TabIndex = 2;
             this.RestaurarBtn.Text = "Restaurar Proveedor";
             this.RestaurarBtn.UseVisualStyleBackColor = true;
@@ -62,9 +63,10 @@
             // 
             // NuevoBtn
             // 
+            this.NuevoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NuevoBtn.Location = new System.Drawing.Point(46, 29);
             this.NuevoBtn.Name = "NuevoBtn";
-            this.NuevoBtn.Size = new System.Drawing.Size(138, 50);
+            this.NuevoBtn.Size = new System.Drawing.Size(144, 50);
             this.NuevoBtn.TabIndex = 0;
             this.NuevoBtn.Text = "Nuevo Proveedor";
             this.NuevoBtn.UseVisualStyleBackColor = true;
@@ -72,9 +74,10 @@
             // 
             // FiltrarBtn
             // 
+            this.FiltrarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FiltrarBtn.Location = new System.Drawing.Point(46, 103);
             this.FiltrarBtn.Name = "FiltrarBtn";
-            this.FiltrarBtn.Size = new System.Drawing.Size(138, 50);
+            this.FiltrarBtn.Size = new System.Drawing.Size(144, 50);
             this.FiltrarBtn.TabIndex = 1;
             this.FiltrarBtn.Text = "Filtrar Proveedor";
             this.FiltrarBtn.UseVisualStyleBackColor = true;
@@ -88,7 +91,7 @@
             this.SalirBtn.Name = "SalirBtn";
             this.SalirBtn.Size = new System.Drawing.Size(138, 50);
             this.SalirBtn.TabIndex = 3;
-            this.SalirBtn.Text = "Salir";
+            this.SalirBtn.Text = "<< Volver";
             this.SalirBtn.UseVisualStyleBackColor = false;
             this.SalirBtn.Click += new System.EventHandler(this.SalirBtn_Click);
             // 
